@@ -1,0 +1,1140 @@
+<pnml xmlns="http://www.lip6.fr/pnml/pntds/PNMLPTNet.pntd">
+ <net id="id1" type="http://www.lip6.fr/pnml/pntds/PNMLPTNet.pntd">
+  <name>
+   <text>timedNet</text>
+  </name>
+  <page id="page1">
+   <place id="pwa_green">
+    <name>
+     <text>pwa_green</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="200" y="118"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwd_green">
+    <name>
+     <text>pwd_green</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="362" y="212"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwr_green">
+    <name>
+     <text>pwr_green</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="362" y="118"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwg_green">
+    <name>
+     <text>pwg_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwc_green">
+    <name>
+     <text>pwc_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwf_green">
+    <name>
+     <text>pwf_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="798" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwpc_green">
+    <name>
+     <text>pwpc_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="212"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pdm_green">
+    <name>
+     <text>pdm_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="212"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwa_yellow">
+    <name>
+     <text>pwa_yellow</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="200" y="418"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwd_yellow">
+    <name>
+     <text>pwd_yellow</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="362" y="512"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwr_yellow">
+    <name>
+     <text>pwr_yellow</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="362" y="418"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwg_yellow">
+    <name>
+     <text>pwg_yellow</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="420"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwc_yellow">
+    <name>
+     <text>pwc_yellow</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="420"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwf_yellow">
+    <name>
+     <text>pwf_yellow</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="798" y="420"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwpc_yellow">
+    <name>
+     <text>pwpc_yellow</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="512"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pdm_yellow">
+    <name>
+     <text>pdm_yellow</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="512"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwa_red">
+    <name>
+     <text>pwa_red</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="200" y="718"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwd_red">
+    <name>
+     <text>pwd_red</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="362" y="812"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwr_red">
+    <name>
+     <text>pwr_red</text>
+     <graphics>
+      <offset x="0" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="362" y="718"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwg_red">
+    <name>
+     <text>pwg_red</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="720"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwc_red">
+    <name>
+     <text>pwc_red</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="720"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwf_red">
+    <name>
+     <text>pwf_red</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="798" y="720"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwpc_red">
+    <name>
+     <text>pwpc_red</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="812"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pdm_red">
+    <name>
+     <text>pdm_red</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="812"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pstart">
+    <name>
+     <text>pstart</text>
+     <graphics>
+      <offset x="20" y="20"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="28" y="511"/>
+    </graphics>
+    <initialMarking>
+     <text>1</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pst_0">
+    <name>
+     <text>pst_0</text>
+    </name>
+    <graphics>
+     <position x="200" y="212"/>
+    </graphics>
+   </place>
+   <place id="pst_01">
+    <name>
+     <text>pst_01</text>
+    </name>
+    <graphics>
+     <position x="200" y="512"/>
+    </graphics>
+   </place>
+   <place id="pst_012">
+    <name>
+     <text>pst_012</text>
+    </name>
+    <graphics>
+     <position x="200" y="812"/>
+    </graphics>
+   </place>
+   <place id="PEnd">
+    <name>
+     <text>PEnd</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="1058" y="511"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <transition id="ta_green">
+    <name>
+     <text>ta_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="277" y="118"/>
+    </graphics>
+   </transition>
+   <transition id="tph_green">
+    <name>
+     <text>tph_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="277" y="212"/>
+    </graphics>
+   </transition>
+   <transition id="tr_green">
+    <name>
+     <text>tr_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="428" y="120"/>
+    </graphics>
+   </transition>
+   <transition id="tg_green">
+    <name>
+     <text>tg_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="577" y="120"/>
+    </graphics>
+   </transition>
+   <transition id="tc_green">
+    <name>
+     <text>tc_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="720" y="120"/>
+    </graphics>
+   </transition>
+   <transition id="tf_green">
+    <name>
+     <text>tf_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="864" y="120"/>
+    </graphics>
+   </transition>
+   <transition id="td_green">
+    <name>
+     <text>td_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="426" y="212"/>
+    </graphics>
+   </transition>
+   <transition id="tpc_green">
+    <name>
+     <text>tpc_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="576" y="212"/>
+    </graphics>
+   </transition>
+   <transition id="ta_yellow">
+    <name>
+     <text>ta_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="277" y="418"/>
+    </graphics>
+   </transition>
+   <transition id="tph_yellow">
+    <name>
+     <text>tph_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="277" y="512"/>
+    </graphics>
+   </transition>
+   <transition id="tr_yellow">
+    <name>
+     <text>tr_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="428" y="420"/>
+    </graphics>
+   </transition>
+   <transition id="tg_yellow">
+    <name>
+     <text>tg_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="577" y="420"/>
+    </graphics>
+   </transition>
+   <transition id="tc_yellow">
+    <name>
+     <text>tc_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="720" y="420"/>
+    </graphics>
+   </transition>
+   <transition id="tf_yellow">
+    <name>
+     <text>tf_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="864" y="420"/>
+    </graphics>
+   </transition>
+   <transition id="td_yellow">
+    <name>
+     <text>td_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="426" y="512"/>
+    </graphics>
+   </transition>
+   <transition id="tpc_yellow">
+    <name>
+     <text>tpc_yellow</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="576" y="512"/>
+    </graphics>
+   </transition>
+   <transition id="ta_red">
+    <name>
+     <text>ta_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="277" y="718"/>
+    </graphics>
+   </transition>
+   <transition id="tph_red">
+    <name>
+     <text>tph_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="277" y="812"/>
+    </graphics>
+   </transition>
+   <transition id="tr_red">
+    <name>
+     <text>tr_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="428" y="720"/>
+    </graphics>
+   </transition>
+   <transition id="tg_red">
+    <name>
+     <text>tg_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="577" y="720"/>
+    </graphics>
+   </transition>
+   <transition id="tc_red">
+    <name>
+     <text>tc_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="720" y="720"/>
+    </graphics>
+   </transition>
+   <transition id="tf_red">
+    <name>
+     <text>tf_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="864" y="720"/>
+    </graphics>
+   </transition>
+   <transition id="td_red">
+    <name>
+     <text>td_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="426" y="812"/>
+    </graphics>
+   </transition>
+   <transition id="tpc_red">
+    <name>
+     <text>tpc_red</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="576" y="812"/>
+    </graphics>
+   </transition>
+   <transition id="tstart">
+    <name>
+     <text>tstart</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="112" y="511"/>
+    </graphics>
+   </transition>
+   <transition id="tend">
+    <name>
+     <text>tend</text>
+     <graphics>
+      <offset x="20" y="20"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="986" y="511"/>
+    </graphics>
+   </transition>
+   <arc id="tph-pwa-green" source="tph_green" target="pwa_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwa-ta-green" source="pwa_green" target="ta_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="ta-pwr-green" source="ta_green" target="pwr_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="ta-pwd-green" source="ta_green" target="pwd_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwr-green" source="tph_green" target="pwr_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwd-green" source="tph_green" target="pwd_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwr-tr-green" source="pwr_green" target="tr_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tr-pwg-green" source="tr_green" target="pwg_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwg-tg-green" source="pwg_green" target="tg_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tg-pwc-green" source="tg_green" target="pwc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tc-green" source="pwc_green" target="tc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tc-pwf-green" source="tc_green" target="pwf_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwf-tf-green" source="pwf_green" target="tf_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwd-tf-green" source="pwd_green" target="tf_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwd-td-green" source="pwd_green" target="td_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="td-pwpc-green" source="td_green" target="pwpc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwpc-tpc-green" source="pwpc_green" target="tpc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tpc-pdm-green" source="tpc_green" target="pdm_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tpc-green" source="pwc_green" target="tpc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwa-yellow" source="tph_yellow" target="pwa_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwa-ta-yellow" source="pwa_yellow" target="ta_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="ta-pwr-yellow" source="ta_yellow" target="pwr_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="ta-pwd-yellow" source="ta_yellow" target="pwd_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwr-yellow" source="tph_yellow" target="pwr_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwd-yellow" source="tph_yellow" target="pwd_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwr-tr-yellow" source="pwr_yellow" target="tr_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tr-pwg-yellow" source="tr_yellow" target="pwg_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwg-tg-yellow" source="pwg_yellow" target="tg_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tg-pwc-yellow" source="tg_yellow" target="pwc_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tc-yellow" source="pwc_yellow" target="tc_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tc-pwf-yellow" source="tc_yellow" target="pwf_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwf-tf-yellow" source="pwf_yellow" target="tf_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwd-tf-yellow" source="pwd_yellow" target="tf_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwd-td-yellow" source="pwd_yellow" target="td_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="td-pwpc-yellow" source="td_yellow" target="pwpc_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwpc-tpc-yellow" source="pwpc_yellow" target="tpc_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tpc-pdm-yellow" source="tpc_yellow" target="pdm_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tpc-yellow" source="pwc_yellow" target="tpc_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwa-red" source="tph_red" target="pwa_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwa-ta-red" source="pwa_red" target="ta_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="ta-pwr-red" source="ta_red" target="pwr_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="ta-pwd-red" source="ta_red" target="pwd_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwr-red" source="tph_red" target="pwr_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tph-pwd-red" source="tph_red" target="pwd_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwr-tr-red" source="pwr_red" target="tr_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tr-pwg-red" source="tr_red" target="pwg_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwg-tg-red" source="pwg_red" target="tg_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tg-pwc-red" source="tg_red" target="pwc_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tc-red" source="pwc_red" target="tc_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tc-pwf-red" source="tc_red" target="pwf_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwf-tf-red" source="pwf_red" target="tf_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwd-tf-red" source="pwd_red" target="tf_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwd-td-red" source="pwd_red" target="td_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="td-pwpc-red" source="td_red" target="pwpc_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwpc-tpc-red" source="pwpc_red" target="tpc_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tpc-pdm-red" source="tpc_red" target="pdm_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tpc-red" source="pwc_red" target="tpc_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pstart-tstart" source="pstart" target="tstart">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pst-tph-green" source="pst_0" target="tph_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tstart-pst-green" source="tstart" target="pst_0">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pst-tph-yellow" source="pst_01" target="tph_yellow">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tstart-pst-yellow" source="tstart" target="pst_01">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pst-tph-red" source="pst_012" target="tph_red">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tstart-pst-red" source="tstart" target="pst_012">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tend-pend" source="tend" target="PEnd">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <place id="pf_0">
+    <name>
+     <text>pf_0</text>
+    </name>
+    <graphics>
+     <position x="931" y="120"/>
+    </graphics>
+   </place>
+   <arc id="tf-pf-green" source="tf_green" target="pf_0">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pf-tend-green" source="pf_0" target="tend">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <place id="pf_01">
+    <name>
+     <text>pf_01</text>
+    </name>
+    <graphics>
+     <position x="931" y="420"/>
+    </graphics>
+   </place>
+   <arc id="tf-pf-yellow" source="tf_yellow" target="pf_01">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pf-tend-yellow" source="pf_01" target="tend">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <place id="pf_012">
+    <name>
+     <text>pf_012</text>
+    </name>
+    <graphics>
+     <position x="931" y="720"/>
+    </graphics>
+   </place>
+   <arc id="tf-pf-red" source="tf_red" target="pf_012">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pf-tend-red" source="pf_012" target="tend">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+  </page>
+ </net>
+</pnml>

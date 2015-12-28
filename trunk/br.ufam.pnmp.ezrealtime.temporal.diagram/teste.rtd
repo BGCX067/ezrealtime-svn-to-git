@@ -1,0 +1,17 @@
+Proc=P1
+tC1=1
+tC2=3
+#
+Proc=P2
+tC3=1
+tC4=3
+#
+Proc=P3
+tC5=1
+tC6=3
+#
+(tStart,0,0) (tC1,2,10) (tR1,0,10) (tC2,10,25) (tEnd,0,25)
+#
+(tStart,0,0) (tC3,2,10) (tR1,0,10) (tC4,10,25) (tEnd,0,25)
+#
+(tStart,0,0) (tC5,2,10) (tR1,0,10) (tC6,10,25) (tEnd,0,25)

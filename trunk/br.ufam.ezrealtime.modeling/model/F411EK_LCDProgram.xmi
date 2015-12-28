@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ezrt:Program xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://ezrealtime.org/meta/1.0.0/core" xmlns:ezrt="http://ezrealtime.org/meta/1.0.0/ezrealtime" xsi:schemaLocation="http://ezrealtime.org/meta/1.0.0/core ../dsl/metamodel/ezrealtime.core.ecore http://ezrealtime.org/meta/1.0.0/ezrealtime ../dsl/metamodel/ezrealtime.metamodel.ecore">
+  <elements xsi:type="core:File" name="F411EK_LCDInterface" type="C Header File" toolChain="">
+    <feature xsi:type="core:PreprocessorDirective" name="F411EK_Types" type="#include"/>
+  </elements>
+</ezrt:Program>

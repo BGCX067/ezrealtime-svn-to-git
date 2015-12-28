@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="br.ufam.pnmp.ezrealtime.feature"
+      label="ezRealtime Feature"
+      version="1.0.0"
+      provider-name="Fabiano Cruz - UFAM">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="license.html">
+      [Enter License Description here.]
+   </license>
+
+   <url>
+      <update label="http://pnmp.sf.net/ezrealtime/update" url="http://pnmp.sf.net/ezrealtime"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.intro"/>
+      <import plugin="org.eclipse.ui.intro.universal"/>
+      <import plugin="br.ufam.pnmp.ezrealtime.model"/>
+      <import plugin="org.eclipse.emf.exporter"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.emf.edit"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="br.ufam.pnmp.ezrealtime.model.edit"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="br.ufam.pnmp.ezrealtime.exporter"/>
+      <import plugin="br.ufam.pnmp.ezrealtime.temporal.diagram"/>
+      <import plugin="br.ufam.pnmp.ezrealtime.scheduler"/>
+      <import plugin="org.eclipse.ui.views"/>
+   </requires>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.core"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.ui"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.exporter"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"/>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.model"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.model.edit"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.model.editor"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.scheduler"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="br.ufam.pnmp.ezrealtime.temporal.diagram"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"/>
+
+</feature>

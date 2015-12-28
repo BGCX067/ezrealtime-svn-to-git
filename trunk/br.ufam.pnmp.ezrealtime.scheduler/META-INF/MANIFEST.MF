@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ezRealtime Scheduler Plug-in
+Bundle-SymbolicName: br.ufam.pnmp.ezrealtime.scheduler; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: br.ufam.pnmp.ezrealtime.scheduler.Activator
+Bundle-Vendor: Fabiano Cruz - UFAM
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Eclipse-LazyStart: true

@@ -1,0 +1,5 @@
+Proc=PC1
+Tc1=2
+Tc2=3
+#
+(Tstart,0)(Tph1,0)(Tph2,0)(Tr1,0)(Tp1,0)(Tr2,2)(Tc1,0)(Tp2,0)(Tc2,3)(Ta2,1)(Ta1,2)(Tr1,0)(Tr2,0)(Tp2,0)(Tc2,3)(Tp1,0)(Ta2,1)(Tc1,1)(Tr2,1)(Tp2,0)(Ta1,2)(Tr1,0)(Tc2,1)(Tp1,0)(Ta2,1)(Tc1,1)(Tr2,1)(Tp2,0)(Tc2,3)(Tend,0)

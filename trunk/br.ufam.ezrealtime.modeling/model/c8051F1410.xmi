@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ezrt:Program xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:classifiers="http://ezrealtime.org/meta/1.0.0/classifiers" xmlns:ezrt="http://ezrealtime.org/meta/1.0.0/ezrealtime" xsi:schemaLocation="http://ezrealtime.org/meta/1.0.0/classifiers ../dsl/metamodel/ezrealtime.classifiers.ecore http://ezrealtime.org/meta/1.0.0/ezrealtime ../dsl/metamodel/ezrealtime.metamodel.ecore">
+  <elements xsi:type="classifiers:File" name="c8051F410">
+    <feature xsi:type="classifiers:Variable" name="PCA0MD">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.14"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xE1" name="XBR0">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.14"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xE2" name="XBR1">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.14"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xA6" name="P2MDOUT">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.14"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xB2" name="OSCICN">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.14"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xC8" name="TMR2CN">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.14"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0x8E" name="CKCON">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.14"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xAD" name="ET2">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.15"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xCA" name="TR2">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.15"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xAF" name="EA">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.15"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xCF" name="TF2H"/>
+    <feature xsi:type="classifiers:InterruptPreprocessorDirective" defaultValueLiteral="5" name="INTERRUPT_TIMER2" type="#define"/>
+    <feature xsi:type="classifiers:InterruptPreprocessorDirective" defaultValueLiteral="0" name="INTERRUPT_INT0" type="#define"/>
+  </elements>
+</ezrt:Program>

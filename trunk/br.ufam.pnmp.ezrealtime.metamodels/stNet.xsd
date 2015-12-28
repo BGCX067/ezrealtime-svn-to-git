@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by Gaso (Gaso) -->
+<!-- edited with XML Spy v3.5 NT (http://www.xmlspy.com) by  () -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation>
+			Proposal: Petri Net Markup Language schema for st-Nets
+			Matthias Juengel 12.10.2000 Michael Weber 12.10.2000
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="pnml">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="net" type="netType" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="netType">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element name="place" type="placeType" minOccurs="0"
+				maxOccurs="unbounded" />
+			<xsd:element name="transition" type="transitionType"
+				minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="arc" type="arcType" minOccurs="0"
+				maxOccurs="unbounded" />
+			<xsd:element name="page" type="pageType" minOccurs="0"
+				maxOccurs="unbounded" />
+			<xsd:element name="referencePlace" type="referencePlaceType"
+				minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="referenceTransition"
+				type="referenceTransitionType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:choice>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+		<xsd:attribute name="type" type="xsd:string" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="placeType">
+		<xsd:sequence>
+			<xsd:element name="graphics" type="graphicsType" />
+			<xsd:element name="name" type="nameType" />
+			<xsd:element name="initialMarking" type="initialMarkingType"
+				minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="transitionType">
+		<xsd:sequence>
+			<xsd:element name="graphics" type="graphicsType" />
+			<xsd:element name="name" type="nameType" />
+			<xsd:element name="toolspecific" type="toolspecificType"
+				minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="arcType">
+		<xsd:sequence>
+			<xsd:element name="graphics" type="graphicsType" />
+			<xsd:element name="inscription" type="inscriptionType" />
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+		<xsd:attribute name="source" type="xsd:anyURI" use="required" />
+		<xsd:attribute name="target" type="xsd:anyURI" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="referencePlaceType">
+		<xsd:sequence>
+			<xsd:element name="graphics" type="graphicsType" />
+			<xsd:element name="name" type="nameType" />
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+		<xsd:attribute name="ref" type="xsd:IDREF" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="referenceTransitionType">
+		<xsd:sequence>
+			<xsd:element name="graphics" type="graphicsType" />
+			<xsd:element name="name" type="nameType" />
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+		<xsd:attribute name="ref" type="xsd:IDREF" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="pageType">
+		<xsd:sequence>
+			<xsd:element name="name" type="nameType" />
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="place" type="placeType" minOccurs="0"
+					maxOccurs="unbounded" />
+				<xsd:element name="transition" type="transitionType"
+					minOccurs="0" maxOccurs="unbounded" />
+				<xsd:element name="arc" type="arcType" minOccurs="0"
+					maxOccurs="unbounded" />
+				<xsd:element name="page" type="pageType" minOccurs="0"
+					maxOccurs="unbounded" />
+				<xsd:element name="referencePlace"
+					type="referencePlaceType" minOccurs="0" maxOccurs="unbounded" />
+				<xsd:element name="referenceTransition"
+					type="referenceTransitionType" minOccurs="0" maxOccurs="unbounded" />
+			</xsd:choice>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="xsd:ID" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="graphicsType">
+		<xsd:choice>
+			<xsd:element name="position" type="positionType"
+				minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="offset" type="offsetType" />
+		</xsd:choice>
+	</xsd:complexType>
+	<!--
+		This schema allows a graphics element of offsetType in a place.
+		To avoid this, in a future version of this schema there will be local element declarations for 
+		the graphics element. The following type definitions show, how it could look like.
+		<xsd:complexType name="PlaceTransitionGraphicsType" content="elementOnly">
+		<xsd:sequence>
+		<xsd:element name="position" type="positionType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+		</xsd:complexType>
+		<xsd:complexType name="ArcGraphicsType" content="elementOnly">
+		<xsd:sequence>
+		<xsd:element name="position" type="positionType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		</xsd:complexType>
+		<xsd:complexType name="OffsetGraphicsType" content="elementOnly">
+		<xsd:element name="offset" type="offsetType"/>
+		</xsd:complexType>
+	-->
+	<xsd:complexType name="offsetType">
+		<xsd:attribute name="x" type="xsd:decimal" use="required" />
+		<xsd:attribute name="y" type="xsd:decimal" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="positionType">
+		<xsd:attribute name="x" type="xsd:decimal" use="required" />
+		<xsd:attribute name="y" type="xsd:decimal" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="nameType">
+		<xsd:sequence>
+			<xsd:element name="text" type="xsd:string" />
+			<xsd:element name="graphics" type="graphicsType"
+				minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="initialMarkingType">
+		<xsd:sequence>
+			<xsd:element name="text" type="xsd:string" />
+			<xsd:element name="graphics" type="graphicsType"
+				minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="inscriptionType">
+		<xsd:sequence>
+			<xsd:element name="value" type="xsd:string" />
+			<xsd:element name="graphics" type="graphicsType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="toolspecificType">
+		<xsd:sequence>
+			<xsd:element name="hidden" type="hiddenType" />
+		</xsd:sequence>
+		<xsd:attribute name="tool" type="xsd:string" use="required" />
+		<xsd:attribute name="version" type="xsd:decimal" use="required" />
+	</xsd:complexType>
+	<xsd:complexType name="hiddenType" />
+</xsd:schema>

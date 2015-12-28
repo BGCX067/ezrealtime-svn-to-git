@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="EZRealtime.ecore#/"
+    outputs="EZRealtimeXML.xsd#/">
+  <nested inputs="EZRealtime.ecore#/" outputs="EZRealtimeXML.xsd#/">
+    <nested inputs="EZRealtime.ecore#//SchedulingType" outputs="EZRealtimeXML.xsd#//SchedulingType;XSDSimpleTypeDefinition">
+      <nested inputs="EZRealtime.ecore#//SchedulingType/P" outputs="EZRealtimeXML.xsd#//SchedulingType;XSDSimpleTypeDefinition/XSDEnumerationFacet"/>
+      <nested inputs="EZRealtime.ecore#//SchedulingType/NP" outputs="EZRealtimeXML.xsd#//SchedulingType;XSDSimpleTypeDefinition/XSDEnumerationFacet=1"/>
+    </nested>
+    <nested inputs="EZRealtime.ecore#//EZRealtimeSpec" outputs="EZRealtimeXML.xsd#//EZRealtimeSpec;XSDComplexTypeDefinition">
+      <nested inputs="EZRealtime.ecore#//EZRealtimeSpec/task" outputs="EZRealtimeXML.xsd#//EZRealtimeSpec;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"/>
+      <nested inputs="EZRealtime.ecore#//EZRealtimeSpec/processor" outputs="EZRealtimeXML.xsd#//EZRealtimeSpec;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"/>
+      <nested inputs="EZRealtime.ecore#//EZRealtimeSpec/message" outputs="EZRealtimeXML.xsd#//EZRealtimeSpec;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"/>
+    </nested>
+    <nested inputs="EZRealtime.ecore#//EZRealtimeSpec" outputs="EZRealtimeXML.xsd#//EZRealtimeSpec;XSDElementDeclaration"/>
+    <nested inputs="EZRealtime.ecore#//Task" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1">
+      <nested inputs="EZRealtime.ecore#//Task/name" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse"/>
+      <nested inputs="EZRealtime.ecore#//Task/period" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=1"/>
+      <nested inputs="EZRealtime.ecore#//Task/phase" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=2"/>
+      <nested inputs="EZRealtime.ecore#//Task/power" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=3"/>
+      <nested inputs="EZRealtime.ecore#//Task/release" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=4"/>
+      <nested inputs="EZRealtime.ecore#//Task/schedulingMode" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=5"/>
+      <nested inputs="EZRealtime.ecore#//Task/computing" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=6"/>
+      <nested inputs="EZRealtime.ecore#//Task/deadline" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=7"/>
+      <nested inputs="EZRealtime.ecore#//Task/oid" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=8"/>
+      <nested inputs="EZRealtime.ecore#//Task/precedesTasks" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=9"/>
+      <nested inputs="EZRealtime.ecore#//Task/precedesMessages" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=10"/>
+      <nested inputs="EZRealtime.ecore#//Task/excludesTasks" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=11"/>
+      <nested inputs="EZRealtime.ecore#//Task/processor" outputs="EZRealtimeXML.xsd#//Task;XSDComplexTypeDefinition=1/XSDAttributeUse=12"/>
+    </nested>
+    <nested inputs="EZRealtime.ecore#//Task" outputs="EZRealtimeXML.xsd#//Task;XSDElementDeclaration=1"/>
+    <nested inputs="EZRealtime.ecore#//Message" outputs="EZRealtimeXML.xsd#//Message;XSDComplexTypeDefinition=2">
+      <nested inputs="EZRealtime.ecore#//Message/name" outputs="EZRealtimeXML.xsd#//Message;XSDComplexTypeDefinition=2/XSDAttributeUse"/>
+      <nested inputs="EZRealtime.ecore#//Message/bus" outputs="EZRealtimeXML.xsd#//Message;XSDComplexTypeDefinition=2/XSDAttributeUse=1"/>
+      <nested inputs="EZRealtime.ecore#//Message/grantBus" outputs="EZRealtimeXML.xsd#//Message;XSDComplexTypeDefinition=2/XSDAttributeUse=2"/>
+      <nested inputs="EZRealtime.ecore#//Message/communication" outputs="EZRealtimeXML.xsd#//Message;XSDComplexTypeDefinition=2/XSDAttributeUse=3"/>
+      <nested inputs="EZRealtime.ecore#//Message/oid" outputs="EZRealtimeXML.xsd#//Message;XSDComplexTypeDefinition=2/XSDAttributeUse=4"/>
+      <nested inputs="EZRealtime.ecore#//Message/precedes" outputs="EZRealtimeXML.xsd#//Message;XSDComplexTypeDefinition=2/XSDAttributeUse=5"/>
+    </nested>
+    <nested inputs="EZRealtime.ecore#//Message" outputs="EZRealtimeXML.xsd#//Message;XSDElementDeclaration=2"/>
+    <nested inputs="EZRealtime.ecore#//Processor" outputs="EZRealtimeXML.xsd#//Processor;XSDComplexTypeDefinition=3">
+      <nested inputs="EZRealtime.ecore#//Processor/oid" outputs="EZRealtimeXML.xsd#//Processor;XSDComplexTypeDefinition=3/XSDAttributeUse"/>
+      <nested inputs="EZRealtime.ecore#//Processor/name" outputs="EZRealtimeXML.xsd#//Processor;XSDComplexTypeDefinition=3/XSDAttributeUse=1"/>
+    </nested>
+    <nested inputs="EZRealtime.ecore#//Processor" outputs="EZRealtimeXML.xsd#//Processor;XSDElementDeclaration=3"/>
+    <nested inputs="EZRealtime.ecore#//SourceCode" outputs="EZRealtimeXML.xsd#//SourceCode;XSDComplexTypeDefinition=4">
+      <nested inputs="EZRealtime.ecore#//SourceCode/content" outputs="EZRealtimeXML.xsd#//SourceCode;XSDComplexTypeDefinition=4/XSDAttributeUse"/>
+    </nested>
+    <nested inputs="EZRealtime.ecore#//SourceCode" outputs="EZRealtimeXML.xsd#//SourceCode;XSDElementDeclaration=4"/>
+  </nested>
+</xsd2ecore:XSD2EcoreMappingRoot>

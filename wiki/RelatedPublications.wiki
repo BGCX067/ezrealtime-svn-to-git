@@ -1,0 +1,12 @@
+#labels Featured
+=== Publications ===
+
+  # Cordeiro, L. C.; Mar, C. A.; Valentin, E. B.; Cruz, F. T.; Patrick, D. O.; Barreto, R. S.; Lucena Jr., V. F.; (2008). <b>An Agile Development Methodology Applied to Embedded Control Software under Stringent Hardware Constraints</b>. To be published at the ACM SIGSOFT Software Engineering Notes, Volume 33, Issue 1, Jan 2008, ISSN:0163-5948.
+
+  # CRUZ, F; BARRETO, R. ; CORDEIRO, L. ; MACIEL, P. <b> A Modelware Apparatus for Developing Model-Driven Embedded Hard Real-Time Applications</b>. IEEE Transactions on Software Engineering. <font color="red">Submitted</font>.
+
+  # CRUZ, F ; BARRETO, R. ; CORDEIRO, L. ; MACIEL, P. <b>Towards a Model-Driven Engineering Approach for Developing Embedded Hard Real-Time Software </b>. In: The 23rd ACM Symposium on Applied Computing, 2007, Fortaleza. Real-Time Systems, 2007.
+
+  # CRUZ, F ; BARRETO, R. ; CORDEIRO, L. ; MACIEL, P. <b>ezRealtime: A Domain-Specific Modeling Tool for Embedded Hard Real-Time Software Synthesis </b>. In: Design, Automation, and Test in Europe (DATE'08), 2007, Munich, Germany. Embedded Systems Software Track, 2007.
+
+  # CORDEIRO, L. ; BARRETO, R. ; LUCENA, Vicente ; CRUZ, F ; MAR, C. ; BEZERRA, E. ; PATRICK, D. <b>A Platform-Based Software Design Methodology for Embedded Control Systems: An Agile Toolkit </b>. In: 15th IEEE International Conference on Engineering of Computer-Based Systems, 2007, Belfast. Agility in the Software Process, 2008.

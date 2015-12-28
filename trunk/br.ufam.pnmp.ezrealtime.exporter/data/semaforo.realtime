@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rt:spec xmlns:rt="http://www.ufam.edu.br/pnmp/Realtime">
+  <task identifier="t18276381">
+    <name>green</name>
+    <period>9</period>
+    <power>10</power>
+    <processor>p72164381</processor>
+    <schedulingMode>NP</schedulingMode>
+    <computing>1</computing>
+    <deadline>9</deadline>
+    <precedes>
+      <task>t18276381</task>
+    </precedes>
+  </task>
+  <task identifier="t71652371">
+    <name>yellow</name>
+    <period>9</period>
+    <phase>5</phase>
+    <power>2</power>
+    <processor>p72164381</processor>
+    <schedulingMode>NP</schedulingMode>
+    <computing>1</computing>
+    <deadline>9</deadline>
+    <precedes>
+      <task>t8327803</task>
+    </precedes>
+  </task>
+  <task identifier="t8327803">
+    <name>red</name>
+    <period>9</period>
+    <phase>6</phase>
+    <power>5</power>
+    <processor>p72164381</processor>
+    <schedulingMode>NP</schedulingMode>
+    <computing>1</computing>
+    <deadline>9</deadline>
+  </task>
+  <processor identifier="p72164381">
+    <name>P1</name>
+  </processor>
+</rt:spec>

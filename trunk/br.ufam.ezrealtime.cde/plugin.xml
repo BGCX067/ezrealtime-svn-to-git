@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="br.ufam.edu.ezrealtime.cde.application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            visible="true">
+         <run
+               class="br.ufam.edu.ezrealtime.cde.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="ezRealtime eC2"
+            class="br.ufam.edu.ezrealtime.cde.Perspective"
+            id="br.ufam.edu.ezrealtime.cde.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="br.ufam.edu.ezrealtime.cde.application"
+            name="ezRealtime">
+         <property
+               name="windowImages"
+               value="icons/alt_window_16.gif,icons/alt_window_32.gif">
+         </property>
+      </product>
+   </extension>
+   
+    <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="br.ufam.ezrealtime.cde.ui.commands.OpenFileHandler"
+            id="br.ufam.ezrealtime.ebundle.cmd.OpenFile"
+            name="Open File">
+      </command>
+      <command
+            id="org.eclipse.ui.newWizard"
+            name="New">
+      </command>
+      <command
+            defaultHandler="br.ufam.ezrealtime.cde.ui.commands.SelectionDialogHandler"
+            id="br.ufam.ezrealtime.ebundle.cmd.SelectionDialog"
+            name="Selection Dialog">
+      </command>
+      <command
+            defaultHandler="br.ufam.ezrealtime.cde.ui.commands.NewProjectHandler"
+            id="br.ufam.ezrealtime.ebundle.cmd.NewProject"
+            name="New Project">
+      </command>
+      <command
+            defaultHandler="br.ufam.ezrealtime.cde.ui.commands.SaveHandler"
+            id="org.eclipse.ui.file.save"
+            name="Save">
+      </command>
+      <command
+            id="br.ufam.ezrealtime.ebundle.cmd.CallEBundleEditor"
+            name="Call eBundle Editor">
+      </command>
+      <command
+            defaultHandler="br.ufam.ezrealtime.cde.ui.commands.CloseProjectHandler"
+            id="br.ufam.ezrealtime.ebundle.cmd.CloseProject"
+            name="Close Project">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="br.ufam.ezrealtime.cde.ui.commands.CallEBundleEditorHandler"
+            commandId="br.ufam.ezrealtime.ebundle.cmd.CallEBundleEditor">
+         <enabledWhen>
+            <reference
+                  definitionId="oneElementSelected">
+            </reference>
+         </enabledWhen>
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="br.ufam.edu.ezrealtime.cde.category.ezRealtime"
+            name="ezRealtime">
+      </category>
+      <view
+            allowMultiple="false"
+            class="org.eclipse.ui.navigator.CommonNavigator"
+            icon="icons/icon_view.png"
+            id="br.ufam.edu.ezrealtime.cde.navigator"
+            name="Project Explorer"
+            restorable="true">
+      </view>
+   </extension>
+   
+     <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="br.ufam.ezrealtime.cde.editors.EBundleFormEditor"
+            default="true"
+            filenames="ebundle.xml"
+            icon="icons/icon_preview_preview.png"
+            id="br.ufam.ezrealtime.ebundle.editors.EBundleFormEditor"
+            name="ebundle.xml">
+      </editor>
+      <editor
+            class="br.ufam.ezrealtime.cde.editors.manifest.ManifestEditor"
+            default="false"
+            extensions="mf"
+            id="br.ufam.ezrealtime.ebundle.editors.ManifestEditor"
+            name="Manifest.mf">
+      </editor>
+   </extension>
+
+<extension
+         name="ezRealtime"
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="fileMenu"
+               label="File">
+            <command
+                  commandId="org.eclipse.ui.newWizard"
+                  label="New"
+                  style="push">
+            </command>
+            <command
+                  commandId="br.ufam.ezrealtime.ebundle.cmd.OpenFile"
+                  disabledIcon="icons/icon_open_disabled.png"
+                  icon="icons/icon_open.png"
+                  label="Open"
+                  style="push"
+                  tooltip="Open file">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.close"
+                  label="Close"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.closeAll"
+                  label="Close All"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.save"
+                  disabledIcon="icons/icon_save_disabled.png"
+                  icon="icons/icon_save.png"
+                  label="Save"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.saveAs"
+                  disabledIcon="icons/icon_save_as_disabled.png"
+                  icon="icons/icon_save_as.png"
+                  label="Save As..."
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  label="Exit"
+                  style="push"
+                  tooltip="Exit the application">
+            </command>
+         </menu>
+         <menu
+               label="Edit">
+            <command
+                  commandId="org.eclipse.ui.edit.undo"
+                  disabledIcon="icons/icon_undo_disabled.png"
+                  icon="icons/icon_undo.png"
+                  label="Undo"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.redo"
+                  disabledIcon="icons/icon_redo_disabled.png"
+                  icon="icons/icon_redo.png"
+                  label="Redo"
+                  style="push">
+            </command>
+            <separator
+                  name="menu.edit.separator1">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.edit.cut"
+                  label="Cut"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.copy"
+                  label="Copy"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.paste"
+                  label="Paste"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="br.ufam.ezrealtime.ebundle.app.commands.toolbar">
+            <command
+                  commandId="br.ufam.ezrealtime.ebundle.cmd.OpenFile"
+                  disabledIcon="icons/icon_open_disabled.png"
+                  icon="icons/icon_open.png"
+                  label="Open"
+                  style="push">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.file.save"
+                  disabledIcon="icons/icon_save_disabled.png"
+                  icon="icons/icon_save.png"
+                  label="Save"
+                  style="push">
+            </command>
+            <command
+                  commandId="br.ufam.ezrealtime.ebundle.cmd.NewProject"
+                  disabledIcon="icons/icon_new_disabled.png"
+                  icon="icons/icon_new.png"
+                  label="New Project"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:br.ufam.ezrealtime.ebundle.view.ProjectExplorerView">
+         <command
+               commandId="br.ufam.ezrealtime.ebundle.cmd.CallEBundleEditor"
+               label="One Item selected"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+         <view
+               closeable="false"
+               id="br.ufam.edu.ezrealtime.cde.navigator"
+               minimized="false"
+               moveable="true"
+               ratio="0.3f"
+               relationship="left"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               standalone="false"
+               visible="true">
+         </view>
+         <newWizardShortcut
+               id="br.ufam.edu.ezrealtime.cde.newWizard">
+         </newWizardShortcut>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="br.ufam.edu.ezrealtime.cde.category.ezRealtime"
+            name="ezRealtime">
+      </category>
+      <wizard
+            category="br.ufam.edu.ezrealtime.cde.category.ezRealtime"
+            class="br.ufam.ezrealtime.cde.ui.wizards.NewProjectWizard"
+            icon="icons/newcprj_wiz.gif"
+            id="br.ufam.edu.ezrealtime.cde.wizard.NewProject"
+            name="ezRealtime Project">
+      </wizard>
+   </extension>
+   
+   <!-- Create image for C/C++ projects -->
+   <extension
+         point="org.eclipse.ui.ide.projectNatureImages">
+      <image
+            icon="icons/c_ovr.gif"
+            natureId="br.ufam.ezrealtime.ebundle.core.cnature"
+            id="br.ufam.edu.ezrealtime.cde.cProjectNatureImage">
+      </image>
+   </extension>
+   
+   <!-- Set up CElements as Resource Adapters -->
+   
+     <extension
+         point="org.eclipse.ui.elementFactories">
+      <factory
+            class="br.ufam.edu.ezrealtime.cde.NavigatorRoot"
+            id="br.ufam.edu.ezrealtime.cde.NavigatorRoot">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.ui.navigator.viewer">
+      <viewer
+            viewerId="br.ufam.edu.ezrealtime.cde.navigator">
+      </viewer>
+      
+           <viewerContentBinding
+            viewerId="br.ufam.edu.ezrealtime.cde.navigator">
+         <includes>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resourceContent">
+            </contentExtension>
+            <contentExtension
+                  pattern="net.videodb.navigator.filters.*">
+            </contentExtension>
+         </includes>
+      </viewerContentBinding>
+      
+            <viewerActionBinding
+            viewerId="br.ufam.edu.ezrealtime.cde.navigator">
+         <includes>
+            <actionExtension
+                  pattern="org.eclipse.ui.navigator.resources.*">
+            </actionExtension>
+            <actionExtension
+                  pattern="org.eclipse.ui.navigator.resources.NewActions">
+            </actionExtension>
+            <actionExtension
+                  pattern="org.eclipse.ui.navigator.resources.PropertiesActionProvider">
+            </actionExtension>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+ 
+ <extension
+         point="org.eclipse.ui.editors.templates">
+      <template
+            autoinsert="false"
+            contextTypeId="br.ufam.ezrealtime.cde.editors.manifest.templatecontext"
+            description="Bake an ingredient in the oven"
+            id="org.recipeeditor.templates.bake"
+            name="Bake">
+         <pattern>
+            Bake ${ingredient} at ${degrees} degrees
+         </pattern>
+      </template>
+      <template
+            autoinsert="false"
+            contextTypeId="br.ufam.ezrealtime.cde.editors.manifest.templatecontext"
+            description="Stir gently"
+            id="org.recipeeditor.templates.stir"
+            name="Stir">
+         <pattern>
+            Gently stir ${ingredient}
+         </pattern>
+      </template>
+      <contextType
+            class="org.eclipse.jface.text.templates.TemplateContextType"
+            id="br.ufam.ezrealtime.cde.editors.manifest.templatecontext"
+            name="Default Template Context"/>
+   </extension>
+     
+</plugin>

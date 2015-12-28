@@ -1,0 +1,160 @@
+
+// ********* Initial Block *********
+//  PLACE FINAL MARK
+//  NUM OF PLACES
+//  NUM OF TRANSITIONS
+//  CHECK POWER
+//  POWER CHANGE PROCESSOR' CONTEXT
+//  MAX POWER
+##BEGIN##
+2
+37
+28
+0
+0
+0
+
+// ********* Deadline Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TD##
+3$8%16%24
+
+// ********* Arrival Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TA##
+6$2%3%10%11%18%19
+
+// ********* Release Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TR##
+3$4%12%20
+
+// ********* Grant Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TG##
+3$5%13%21
+
+// ********* Computation Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TC##
+3$6%14%22
+
+// ********* Final Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TF##
+3$7%15%23
+
+// ********* Other Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TO##
+5$0%1%9%17%25
+
+// ********* Precedence Transitions *********
+//Cardinality$transition1%transition2%....%transitionN
+##TP##
+2$26%27
+
+// ********* Computation x Processor Transitions *********
+// NUMERO_PROCESSADORES
+// Processador1:Cardinalidade$transicao1%transicao2%....%transicaoN
+// Processador2:Cardinalidade$transicao1%transicao2%....%transicaoN
+// ...
+// ProcessadorN:Cardinalidade$transicao1%transicao2%....%transicaoN
+##TASK-PROC##
+1
+pproc_P1:3$7%15%23
+
+// ********* Initial Marking *********
+// Marking_1%Marking_3%Marking_3%...Marking_N
+##ESTADO_INICIAL##
+1%1%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0%0
+
+// ********* ALL Places *********
+##PLACES##
+pstart%pproc_P1%PEnd%pst_0%pst_01%pst_012%pwa_green%pwr_green%pwd_green%pwg_green%pwc_green%pwf_green%pwpc_green%pdm_green%pwa_yellow%pwr_yellow%pwd_yellow%pwg_yellow%pwc_yellow%pwf_yellow%pwpc_yellow%pdm_yellow%pwa_red%pwr_red%pwd_red%pwg_red%pwc_red%pwf_red%pwpc_red%pdm_red%prec_green_yellow%pwp_green_yellow%prec_yellow_red%pwp_yellow_red%pf_0%pf_01%pf_012
+
+// ********* ALL Transitions *********
+//Trans_Name1%Trans_Name2%Trans_Name3...%Trans_NameN
+//EFT_Trans1%EFT_Trans2%EFT_Trans3...%EFT_TransN
+//LFT_Trans1%LFT_Trans2%LFT_Trans3...%LFT_TransN
+##TRANSITIONS##
+tstart%tend%tph_green%ta_green%tr_green%tg_green%tc_green%tf_green%td_green%tpc_green%tph_yellow%ta_yellow%tr_yellow%tg_yellow%tc_yellow%tf_yellow%td_yellow%tpc_yellow%tph_red%ta_red%tr_red%tg_red%tc_red%tf_red%td_red%tpc_red%tprec_green_yellow%tprec_yellow_red
+0%0%0%9%0%0%1%0%9%0%5%9%0%0%1%0%9%0%6%9%0%0%1%0%9%0%0%0
+0%0%0%9%8%0%1%0%9%0%5%9%8%0%1%0%9%0%6%9%8%0%1%0%9%0%0%0
+
+// ********* Post Conditions *********
+// Cardinalidade1$Lugar1%Lugar2%...%LugarN$Peso1%Peso2%...%PesoN
+// Cardinalidade2$Lugar1%Lugar2%...%LugarN$Peso1%Peso2%...%PesoN
+// ...
+// CardinalidadeN$Lugar1%Lugar2%...%LugarN$Peso1%Peso2%...%PesoN
+##POST##
+3$3%4%5$1%1%1
+1$2$1
+1$7$1
+2$7%8$1%1
+1$9$1
+1$10$1
+2$1%11$1%1
+2$30%34$1%1
+1$12$1
+1$13$1
+2$15%16$1%1
+2$15%16$1%1
+1$31$1
+1$18$1
+2$1%19$1%1
+2$32%35$1%1
+1$20$1
+1$21$1
+2$23%24$1%1
+2$23%24$1%1
+1$33$1
+1$26$1
+2$1%27$1%1
+1$36$1
+1$28$1
+1$29$1
+1$17$1
+1$25$1
+
+
+// ********* Pre Conditions *********
+// Cardinalidade1$Lugar1%Lugar2%...%LugarN$Peso1%Peso2%...%PesoN
+// Cardinalidade2$Lugar1%Lugar2%...%LugarN$Peso1%Peso2%...%PesoN
+// ...
+// CardinalidadeN$Lugar1%Lugar2%...%LugarN$Peso1%Peso2%...%PesoN
+##PRE##
+1$0$1
+3$34%35%36$1%1%1
+3$3%6%8$1%1%1
+1$3$1
+1$7$1
+2$1%9$1%1
+1$10$1
+2$8%11$1%1
+1$8$1
+2$10%12$1%1
+2$4%14$1%1
+1$4$1
+1$15$1
+2$1%17$1%1
+1$18$1
+2$16%19$1%1
+1$16$1
+2$18%20$1%1
+2$5%22$1%1
+1$5$1
+1$23$1
+2$1%25$1%1
+1$26$1
+2$24%27$1%1
+1$24$1
+2$26%28$1%1
+2$30%31$1%1
+2$32%33$1%1
+
+
+// ********* Final Block *********
+##END-SPEC##
+
+

@@ -1,0 +1,7 @@
+#Mon Apr 26 22:46:16 EDT 2010
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/br.ufam.ezrealtime.modeling/model/ezrealtime.genmodel
+gmf_dashboard/domainModel=platform\:/resource/br.ufam.ezrealtime.modeling/model/ezrealtime.ecore
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/br.ufam.ezrealtime.modeling/model/ezrealtime.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/br.ufam.ezrealtime.modeling/model/ezrealtime.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/br.ufam.ezrealtime.modeling/model/ezrealtime.gmftool

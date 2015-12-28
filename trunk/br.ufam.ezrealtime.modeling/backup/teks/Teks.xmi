@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<teks:Teks xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:teks="http://teksme.org/meta/1.0.0/teks" xsi:schemaLocation="http://teksme.org/meta/1.0.0/teks teks.ecore">
+  <instance>
+    <choice xsi:type="teks:FreeText" question="What questions do you have for the presenter?" keyword="2121"/>
+    <choice xsi:type="teks:MultipleChoice" question="What is your favorite color" note="" mandatory="true" ID="219827931">
+      <answer text="Red" keyword="2122"/>
+      <answer text="Blue" keyword="2123"/>
+      <answer text="Green" keyword="2124"/>
+    </choice>
+  </instance>
+  <responses>
+    <response>
+      <rawMessage textMessage="2123 nothing" ID="76251" sender="20219279831" partNumber="1/1"/>
+      <setValue choiceRef="//@instance/@choice.1" answerRef="//@instance/@choice.1/@answer.1" value="2123"/>
+      <setValue choiceRef="//@instance/@choice.0" value="nothing"/>
+    </response>
+  </responses>
+</teks:Teks>

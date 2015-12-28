@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xsi:noNamespaceSchemaLocation="upnpnml.xsd">
+	<net id="n1" type="UPNPNML">
+		<place id = "p18">
+			<graphics>
+				<position x="128" y="242"/>
+			</graphics>
+			<name>
+				<value>pf</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p19">
+			<graphics>
+				<position x="125" y="159"/>
+			</graphics>
+			<name>
+				<value>pf</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p20">
+			<graphics>
+				<position x="124" y="72"/>
+			</graphics>
+			<name>
+				<value>pf</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p21">
+			<graphics>
+				<position x="307" y="160"/>
+			</graphics>
+			<name>
+				<value>pend</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<transition id = "t13">
+			<graphics>
+				<position x="211" y="159"/>
+			</graphics>
+			<name>
+				<value>tend</value>
+			</name>
+		</transition>
+	<arc id = "a151" source = "p18" target = "t13">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a152" source = "p19" target = "t13">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a153" source = "p20" target = "t13">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a154" source = "t13" target = "p21">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	</net>
+</pnml>

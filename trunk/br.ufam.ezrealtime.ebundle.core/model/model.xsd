@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://pnmp.sf.net/ezrealtime/model" elementFormDefault="qualified"
+    xmlns="http://pnmp.sf.net/ezrealtime/model">
+
+    <xs:annotation>
+        <xs:documentation xml:lang="en"> ezRealtime Bundle definition schema. </xs:documentation>
+    </xs:annotation>
+
+    <xs:element name="ebundle">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="manifest" type="ManifestType"/>
+                <xs:element name="executionEnvironment" type="ExecutionEnvironmentType"/>
+                <xs:element name="build" type="BuildType"/>
+                <xs:element name="dependencies" type="DependenciesType"/>
+                <xs:element name="interface" type="InterfaceType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- definition of complex elements -->
+
+    <xs:complexType name="ManifestType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="provider" type="xs:string"/>
+            <xs:element name="url" type="xs:string"/>
+            <xs:element name="entryPoint" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="version" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[1-9]+[0-9]*\.[0-9]+"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="lastUpdate">
+            <xs:simpleType>
+                <xs:restriction base="xs:date">
+                    <xs:minExclusive value="2010-01-01"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+
+    </xs:complexType>
+
+    <xs:complexType name="ExecutionEnvironmentType">
+        <xs:sequence>
+            <xs:element name="target" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="vendor" type="xs:string"/>
+                        <xs:element name="device" type="xs:string"/>
+                        <xs:element name="toolset" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BuildType">
+        <xs:sequence>
+            <xs:element name="finalName" type="xs:string"/>
+            <xs:element name="assemble" type="Files"/>
+            <xs:element name="compile" type="Files"/>
+            <xs:element name="link" type="Files"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DependenciesType">
+        <xs:sequence>
+            <xs:element name="fileDependencies" type="Files"/>
+            <xs:element name="libraries" type="Files"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="InterfaceType">
+        <xs:sequence>
+            <xs:element name="operations" type="OperationSignatures"/>
+            <xs:element name="attributes" type="Parameters"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Files">
+        <xs:sequence>
+            <xs:element name="file" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="directory" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="OperationSignatures">
+        <xs:sequence>
+            <xs:element name="headerFile" type="xs:string"/>
+            <xs:element name="returnType" type="xs:string"/>
+            <xs:element name="functionName" type="xs:string"/>
+            <xs:element name="parameters" type="Parameters"/>
+
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Parameters">
+        <xs:sequence>
+            <xs:element name="param" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="type" type="xs:string"/>
+                        <xs:element name="identifier" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

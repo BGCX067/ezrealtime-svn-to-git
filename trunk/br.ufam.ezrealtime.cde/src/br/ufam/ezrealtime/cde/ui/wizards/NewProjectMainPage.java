@@ -1,0 +1,223 @@
+package br.ufam.ezrealtime.cde.ui.wizards;
+
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.jface.dialogs.Dialog;
+import org.eclipse.jface.wizard.WizardPage;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.KeyEvent;
+import org.eclipse.swt.events.KeyListener;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.List;
+import org.eclipse.swt.widgets.Table;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.swt.widgets.ToolBar;
+import org.eclipse.swt.widgets.ToolItem;
+import org.eclipse.swt.widgets.Tree;
+import org.eclipse.ui.ISharedImages;
+import org.eclipse.ui.IWorkbench;
+import org.eclipse.ui.PlatformUI;
+import org.eclipse.ui.forms.IFormColors;
+import org.eclipse.ui.forms.IManagedForm;
+import org.eclipse.ui.forms.events.ExpansionAdapter;
+import org.eclipse.ui.forms.events.ExpansionEvent;
+import org.eclipse.ui.forms.widgets.ExpandableComposite;
+import org.eclipse.ui.forms.widgets.FormText;
+import org.eclipse.ui.forms.widgets.FormToolkit;
+import org.eclipse.ui.forms.widgets.ScrolledForm;
+import org.eclipse.ui.forms.widgets.Section;
+
+public class NewProjectMainPage extends WizardPage {
+	IWorkbench workbench;
+
+	String nature;
+
+	private Text textProjectName;
+	private Composite container;
+	private Text textProjectLocation;
+
+	private String projectName;
+
+	public NewProjectMainPage() {
+
+		super("ezRealtime eComponent Project");
+		setTitle("ezRealtime Component Project");
+		setDescription("Creates a new ezRealtime embedded component bundle ");
+	}
+
+	public IProject getProjectHandle() {
+		return ResourcesPlugin.getWorkspace().getRoot().getProject(
+				getProjectName());
+	}
+
+	/**
+	 * Returns the current project name as entered by the user, or its
+	 * anticipated initial value.
+	 * 
+	 * @return the project name, its anticipated initial value, or
+	 *         <code>null</code> if no project name is known
+	 */
+	public String getProjectName() {
+		return projectName;
+	}
+
+	public void createControl(Composite parent) {
+		container = new Composite(parent, SWT.NULL);
+		container.setLayout(null);
+		Label lblProjectName = new Label(container, SWT.NULL);
+		lblProjectName.setBounds(5, 7, 77, 14);
+		lblProjectName.setText("Project name:");
+
+		textProjectName = new Text(container, SWT.BORDER | SWT.SINGLE);
+		textProjectName.setBounds(87, 5, 393, 19);
+		textProjectName.setText("");
+		textProjectName.addKeyListener(new KeyListener() {
+
+			public void keyPressed(KeyEvent e) {
+			}
+
+			public void keyReleased(KeyEvent e) {
+				if (textProjectName.getText() != null
+						|| !textProjectName.getText().equals("")) {
+					setProjectName(textProjectName.getText());
+					setPageComplete(true);
+
+				}
+			}
+
+		});
+
+		// Required to avoid an error in the system
+		setControl(container);
+
+		Button btnUseDefualtLocation = new Button(container, SWT.CHECK);
+		btnUseDefualtLocation.setSelection(true);
+		btnUseDefualtLocation.setBounds(5, 45, 165, 18);
+		btnUseDefualtLocation.setText("Use defualt location");
+
+		Label lblLocation = new Label(container, SWT.NONE);
+		lblLocation.setBounds(5, 80, 59, 14);
+		lblLocation.setText("Location:");
+
+		textProjectLocation = new Text(container, SWT.BORDER);
+		textProjectLocation.setEditable(false);
+		textProjectLocation.setEnabled(false);
+		textProjectLocation.setBounds(69, 77, 311, 19);
+
+		Button btnBrowse = new Button(container, SWT.NONE);
+		btnBrowse.setEnabled(false);
+		btnBrowse.setBounds(386, 72, 94, 30);
+		btnBrowse.setText("Browse...");
+
+		Label lblProjectType = new Label(container, SWT.NONE);
+		lblProjectType.setBounds(5, 115, 74, 14);
+		lblProjectType.setText("Project type:");
+
+		Tree treeProjectType = new Tree(container, SWT.BORDER);
+		treeProjectType.setBounds(5, 135, 232, 173);
+
+		Label lblTargetPlatform = new Label(container, SWT.NONE);
+		lblTargetPlatform.setBounds(243, 115, 94, 14);
+		lblTargetPlatform.setText("Target platform:");
+
+		List listTargetPlatform = new List(container, SWT.BORDER);
+		listTargetPlatform.setBounds(243, 135, 237, 173);
+		setPageComplete(false);
+
+	}
+
+	private void setProjectName(String projectName) {
+		this.projectName = projectName;
+
+	}
+
+	protected void createFormContent(IManagedForm managedForm) {
+		ScrolledForm form = managedForm.getForm();
+		FormToolkit toolkit = managedForm.getToolkit();
+		form.setText("Title for the second page");
+		// form.setBackgroundImage(ExamplesPlugin.getDefault().getImage(
+		// ExamplesPlugin.IMG_FORM_BG));
+		GridLayout layout = new GridLayout();
+		layout.makeColumnsEqualWidth = true;
+		layout.numColumns = 2;
+		form.getBody().setLayout(layout);
+		// This call is needed because the section will compute
+		// the bold version based on the parent.
+		Dialog.applyDialogFont(form.getBody());
+		Section s1 = createTableSection(form, toolkit, "First Table Section",
+				true);
+		Section s2 = createTableSection(form, toolkit, "Second Table Section",
+				false);
+		// This call is needed for all the children
+		Dialog.applyDialogFont(form.getBody());
+		s2.descriptionVerticalSpacing = s1.getTextClientHeightDifference();
+		form.reflow(true);
+	}
+
+	private Section createTableSection(final ScrolledForm form,
+			FormToolkit toolkit, String title, boolean addTextClient) {
+		Section section = toolkit.createSection(form.getBody(), ExpandableComposite.TWISTIE
+				| ExpandableComposite.TITLE_BAR);
+		section.setActiveToggleColor(toolkit.getHyperlinkGroup()
+				.getActiveForeground());
+		section.setToggleColor(toolkit.getColors().getColor(
+				IFormColors.SEPARATOR));
+		if (addTextClient) {
+			ToolBar tbar = new ToolBar(section, SWT.FLAT | SWT.HORIZONTAL);
+			ToolItem titem = new ToolItem(tbar, SWT.NULL);
+			titem.setImage(PlatformUI.getWorkbench().getSharedImages()
+					.getImage(ISharedImages.IMG_TOOL_CUT));
+			titem = new ToolItem(tbar, SWT.PUSH);
+			titem.setImage(PlatformUI.getWorkbench().getSharedImages()
+					.getImage(ISharedImages.IMG_TOOL_COPY));
+			titem = new ToolItem(tbar, SWT.SEPARATOR);
+			titem = new ToolItem(tbar, SWT.PUSH);
+			titem.setImage(PlatformUI.getWorkbench().getSharedImages()
+					.getImage(ISharedImages.IMG_TOOL_DELETE));
+			section.setTextClient(tbar);
+		}
+		FormText description = toolkit.createFormText(section, false);
+		description
+				.setText(
+						"<form><p>This description uses FormText widget and as a result can have <b>bold</b> text.</p></form>",
+						true, false);
+		section.setDescriptionControl(description);
+
+		Composite client = toolkit.createComposite(section, SWT.WRAP);
+		GridLayout layout = new GridLayout();
+		layout.numColumns = 2;
+
+		client.setLayout(layout);
+		Table t = toolkit.createTable(client, SWT.NULL);
+		GridData gd = new GridData(GridData.FILL_BOTH);
+		gd.heightHint = 200;
+		gd.widthHint = 100;
+		t.setLayoutData(gd);
+		toolkit.paintBordersFor(client);
+		Button b = toolkit.createButton(client, "Add...", SWT.PUSH);
+		gd = new GridData(GridData.VERTICAL_ALIGN_BEGINNING);
+		b.setLayoutData(gd);
+		section.setText(title);
+		section
+				.setDescription("<form><p>This section has a <b>tree</b> and a button. It also has <a>a link</a> in the description.</p></form>");
+		section.setClient(client);
+		section.setExpanded(true);
+		section.addExpansionListener(new ExpansionAdapter() {
+			@Override
+			public void expansionStateChanged(ExpansionEvent e) {
+				form.reflow(false);
+			}
+		});
+		gd = new GridData(GridData.FILL_BOTH);
+		section.setLayoutData(gd);
+		return section;
+	}
+
+	public String getText1() {
+		return textProjectName.getText();
+	}
+}

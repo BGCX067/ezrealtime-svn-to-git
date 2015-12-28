@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+	<extension id="ezrealtime_application"
+		point="org.eclipse.core.runtime.applications">
+		<application>
+			<run class="br.ufam.pnmp.ezrealtime.core.Application"></run>
+		</application>
+	</extension>
+
+	<extension id="ezrealtime"
+		point="org.eclipse.core.runtime.products">
+		<product
+			application="br.ufam.pnmp.ezrealtime.core.ezrealtime_application"
+			name="ezRealtime Tool">
+			<property name="windowImages"
+				value="icons/ezrealtime_16.gif,icons/alt_window_32.gif">
+			</property>
+
+			<property name="aboutImage" value="icons/jdg2eAbout.gif" />
+
+			<property name="preferenceCustomization"
+				value="plugin_customization.ini">
+			</property>
+
+			<property name="appName" value="ezRealtime Tool"></property>
+
+		</product>
+	</extension>
+
+
+	<!-- The following extension is to enable welcome page  -->
+	<extension point="org.eclipse.ui.intro">
+		<intro class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+			id="br.ufam.pnmp.ezrealtime.core.intro">
+		</intro>
+		<introProductBinding
+			introId="br.ufam.pnmp.ezrealtime.core.intro"
+			productId="br.ufam.pnmp.ezrealtime.core.ezrealtime">
+		</introProductBinding>
+	</extension>
+
+	<!-- The following extension is to enable welcome page  -->
+	<extension point="org.eclipse.ui.intro.config">
+		<config content="introContent.xml" id="ezrealtime.config"
+			introId="br.ufam.pnmp.ezrealtime.core.intro">
+			<presentation home-page-id="root">
+				<implementation kind="html" os="win32" />
+			</presentation>
+		</config>
+		<config content="introContent.xml"
+			id="br.ufam.pnmp.ezrealtime.core.introConfigId"
+			introId="br.ufam.pnmp.ezrealtime.core.intro">
+			<presentation home-page-id="root">
+				<implementation kind="html" os="win32,linux,macosx"
+					style="content/shared.css">
+				</implementation>
+			</presentation>
+		</config>
+	</extension>
+
+	<extension point="org.eclipse.ui.bindings">
+		<key commandId="org.eclipse.ui.file.exit"
+			schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+			sequence="CTRL+X">
+		</key>
+	</extension>
+
+
+	<extension point="org.eclipse.ui.elementFactories">
+		<factory class="br.ufam.pnmp.ezrealtime.core.NavigatorRoot"
+			id="br.ufam.pnmp.ezrealtime.core.NavigatorRoot">
+		</factory>
+	</extension>
+
+</plugin>

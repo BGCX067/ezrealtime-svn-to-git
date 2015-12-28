@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xsi:noNamespaceSchemaLocation="upnpnml.xsd">
+	<net id="n1" type="UPNPNML">
+		<place id = "p401">
+			<graphics>
+				<position x="51" y="282"/>
+			</graphics>
+			<name>
+				<value>pStart</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p402">
+			<graphics>
+				<position x="198" y="139"/>
+			</graphics>
+			<name>
+				<value>pst</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<transition id = "t232">
+			<graphics>
+				<position x="135" y="282"/>
+			</graphics>
+			<name>
+				<value>tStart</value>
+			</name>
+		</transition>
+	<arc id = "a895" source = "p401" target = "t232">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a896" source = "t232" target = "p402">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	</net>
+</pnml>

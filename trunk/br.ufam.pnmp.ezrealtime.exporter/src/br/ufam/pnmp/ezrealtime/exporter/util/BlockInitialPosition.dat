@@ -1,0 +1,82 @@
+Block-type: DispatcherOverheadBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 350;
+	[posY] 214;
+  
+Block-type: DeadlineCheckingBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 350;
+	[posY] 214;
+ 
+Block-type: EndStateBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 1004;
+	[posY] 294;
+
+Block-type: ForkBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 20;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 28;
+	[posY] 298;
+		
+Block-type: InitialStateBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 71;
+	[posY] 282;
+
+Block-type: JoinBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 1058;
+	[posY] 298;
+
+Block-type: PeriodicTaskArrivalBlock
+	[nameOffsetX] 20;
+	[nameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 200;
+	[posY] 214;
+
+Block-type: PreemptiveTaskStructureBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 350;
+	[posY] 120;
+		
+Block-type: ResourceBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 72;
+	[posY] 129;
+	
+Block-type: SendingMessageBlock
+	[mameOffsetX] 20;
+	[mameOffsetY] 0;
+	[mkgOffsetX] 20;
+	[mkgOffsetY] 32;
+	[posX] 78;
+	[posY] 136;
+
+.EOF
+  

@@ -1,0 +1,200 @@
+<pnml xmlns="http://www.lip6.fr/pnml/pntds/PNMLPTNet.pntd">
+ <net id="id1" type="http://www.lip6.fr/pnml/pntds/PNMLPTNet.pntd">
+  <name>
+   <text>timedNet</text>
+  </name>
+  <page id="page1">
+   <place id="pwr_green">
+    <name>
+     <text>pwr_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="350" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwg_green">
+    <name>
+     <text>pwg_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwc_green">
+    <name>
+     <text>pwc_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwf_green">
+    <name>
+     <text>pwf_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="798" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pf_green">
+    <name>
+     <text>pf_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="931" y="120"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwd_green">
+    <name>
+     <text>pwd_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="864" y="191"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <transition id="tr_green">
+    <name>
+     <text>tr_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="428" y="120"/>
+    </graphics>
+   </transition>
+   <transition id="tg_green">
+    <name>
+     <text>tg_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="577" y="120"/>
+    </graphics>
+   </transition>
+   <transition id="tc_green">
+    <name>
+     <text>tc_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="720" y="120"/>
+    </graphics>
+   </transition>
+   <transition id="tf_green">
+    <name>
+     <text>tf_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="864" y="120"/>
+    </graphics>
+   </transition>
+   <arc id="pwr-tr-green" source="pwr_green" target="tr_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tr-pwg-green" source="tr_green" target="pwg_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwg-tg-green" source="pwg_green" target="tg_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tg-pwc-green" source="tg_green" target="pwc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tc-green" source="pwc_green" target="tc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tc-pwf-green" source="tc_green" target="pwf_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwf-tf-green" source="pwf_green" target="tf_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tf-pf-green" source="tf_green" target="pf_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwd-tf-green" source="pwd_green" target="tf_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+  </page>
+ </net>
+</pnml>

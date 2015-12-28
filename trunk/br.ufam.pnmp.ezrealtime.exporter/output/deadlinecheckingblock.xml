@@ -1,0 +1,124 @@
+<pnml xmlns="http://www.lip6.fr/pnml/pntds/PNMLPTNet.pntd">
+ <net id="id1" type="http://www.lip6.fr/pnml/pntds/PNMLPTNet.pntd">
+  <name>
+   <text>timedNet</text>
+  </name>
+  <page id="page1">
+   <place id="pwd_green">
+    <name>
+     <text>pwd_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="350" y="212"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwpc_green">
+    <name>
+     <text>pwpc_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="499" y="212"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pdm_green">
+    <name>
+     <text>pdm_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="658" y="212"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <place id="pwc_green">
+    <name>
+     <text>pwc_green</text>
+     <graphics>
+      <offset x="20" y="0"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="577" y="129"/>
+    </graphics>
+    <initialMarking>
+     <text>0</text>
+     <graphics>
+      <offset x="20" y="32"/>
+     </graphics>
+    </initialMarking>
+   </place>
+   <transition id="td_green">
+    <name>
+     <text>td_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="426" y="212"/>
+    </graphics>
+   </transition>
+   <transition id="tpc_green">
+    <name>
+     <text>tpc_green</text>
+     <graphics>
+      <offset x="3" y="-3"/>
+     </graphics>
+    </name>
+    <graphics>
+     <position x="576" y="212"/>
+    </graphics>
+   </transition>
+   <arc id="pwd-td-green" source="pwd_green" target="td_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="td-pwpc-green" source="td_green" target="pwpc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwpc-tpc-green" source="pwpc_green" target="tpc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="tpc-pdm-green" source="tpc_green" target="pdm_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+   <arc id="pwc-tpc-green" source="pwc_green" target="tpc_green">
+    <inscription>
+     <text>1</text>
+    </inscription>
+   </arc>
+  </page>
+ </net>
+</pnml>

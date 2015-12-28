@@ -1,0 +1,2225 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<pnml>
+  <net id="n1" type="timedNet">
+
+	<place id="Pstart">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>1</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>Pstart</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>1</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="23" y="255" />
+		</graphics>
+	</place>
+
+	<place id="P1">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>1</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>P1</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>1</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="210" y="90" />
+		</graphics>
+	</place>
+
+
+	<place id="PEndgreen">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PEndgreen</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="112" y="145" />
+		</graphics>
+	</place>
+
+	<place id="PEndyellow">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PEndyellow</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="112" y="145" />
+		</graphics>
+	</place>
+
+	<place id="PEndred">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PEndred</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="112" y="145" />
+		</graphics>
+	</place>
+
+	<place id="PEnd">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PEnd</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="555" y="265" />
+		</graphics>
+	</place>
+
+	<place id="PStartgreen">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PStartgreen</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="130" y="200" />
+		</graphics>
+	</place>
+
+	<place id="PA1green">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PA1green</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="136" y="206" />
+		</graphics>
+	</place>
+
+	<place id="PA2green">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PA2green</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="140" y="210" />
+		</graphics>
+	</place>
+
+	<place id="PA2green">
+		<name>
+			<text>PA2green</text>
+			<graphics>
+				<offset x="1" y="-2"/>
+			</graphics>
+		</name>
+		<graphics>
+			<position x="140" y="210"/>
+		</graphics>
+		<initialMarking>
+			<text>0</text>
+			<graphics>
+				<offset x="2" y="3"/>
+			</graphics>
+		</initialMarking>
+	</place>
+
+	<place id="PD1green">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PD1green</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="207" y="187" />
+		</graphics>
+	</place>
+
+	<place id="PD2green">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PD2green</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="215" y="195" />
+		</graphics>
+	</place>
+
+	<place id="PD3green">
+		<marking>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</marking>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>PD3green</value>
+		</name>      
+		<initialMarking>
+			<graphics>
+				<offset page="1" x="20" y="32" />
+			</graphics>
+			<value>0</value>
+		</initialMarking>
+		<graphics>
+			<position page="1" x="207" y="187" />
+		</graphics>
+	</place>
+
+    <place id="PR1_green">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PR1_green</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="165" y="145" />
+        </graphics>
+        </place>
+
+    <place id="PR2_green">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PR2_green</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="165" y="145" />
+        </graphics>
+        </place>
+
+    <place id="P_green_PRECEDES_yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>P_green_PRECEDES_yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="17" y="22" />
+        </graphics>
+        </place>
+
+    <place id="PStartyellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PStartyellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="130" y="200" />
+        </graphics>
+        </place>
+
+    <place id="PA1yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PA1yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="136" y="206" />
+        </graphics>
+        </place>
+
+    <place id="PA2yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PA2yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="140" y="210" />
+        </graphics>
+        </place>
+
+    <place id="PD1yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PD1yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="207" y="187" />
+        </graphics>
+        </place>
+
+    <place id="PD2yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PD2yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="215" y="195" />
+        </graphics>
+        </place>
+
+    <place id="PD3yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PD3yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="207" y="187" />
+        </graphics>
+        </place>
+
+    <place id="PR1_yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PR1_yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="165" y="145" />
+        </graphics>
+        </place>
+
+    <place id="PR2_yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PR2_yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="165" y="145" />
+        </graphics>
+        </place>
+
+    <place id="P_yellow_PRECEDES_red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>P_yellow_PRECEDES_red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="17" y="22" />
+        </graphics>
+        </place>
+
+    <place id="PSeq_yellow">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PSeq_yellow</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="25" y="30" />
+        </graphics>
+        </place>
+
+    <place id="PStartred">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PStartred</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="130" y="200" />
+        </graphics>
+        </place>
+
+    <place id="PA1red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PA1red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="136" y="206" />
+        </graphics>
+        </place>
+
+    <place id="PA2red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PA2red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="140" y="210" />
+        </graphics>
+        </place>
+
+    <place id="PD1red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PD1red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="207" y="187" />
+        </graphics>
+        </place>
+
+    <place id="PD2red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PD2red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="215" y="195" />
+        </graphics>
+        </place>
+
+    <place id="PD3red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PD3red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="207" y="187" />
+        </graphics>
+        </place>
+
+    <place id="PR1_red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PR1_red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="165" y="145" />
+        </graphics>
+        </place>
+
+    <place id="PR2_red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PR2_red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="165" y="145" />
+        </graphics>
+        </place>
+
+    <place id="PSeq_red">
+      <marking>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </marking>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>PSeq_red</value>
+        </name>      <initialMarking>
+        <graphics>
+          <offset page="1" x="20" y="32" />
+        </graphics>
+       <value>0</value>
+        </initialMarking>
+        <graphics>
+          <position page="1" x="25" y="30" />
+        </graphics>
+        </place>
+
+    <transition id="tstart">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tstart</value>
+        </name>
+        <graphics>
+          <position page="1" x="75" y="220" />
+        </graphics>
+        </transition>
+
+    <transition id="tEnd">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tEnd</value>
+        </name>
+        <graphics>
+          <position page="1" x="210" y="370" />
+        </graphics>
+        </transition>
+
+    <transition id="tPhgreen">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tPhgreen</value>
+        </name>
+        <graphics>
+          <position page="1" x="130" y="200" />
+        </graphics>
+        </transition>
+
+    <transition id="tAgreen">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>9</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tAgreen</value>
+        </name>
+        <graphics>
+          <position page="1" x="142" y="212" />
+        </graphics>
+        </transition>
+
+    <transition id="tDgreen">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>9</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tDgreen</value>
+        </name>
+        <graphics>
+          <position page="1" x="213" y="193" />
+        </graphics>
+        </transition>
+
+    <transition id="tMDgreen">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tMDgreen</value>
+        </name>
+        <graphics>
+          <position page="1" x="213" y="193" />
+        </graphics>
+        </transition>
+
+    <transition id="tR_green">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>8</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tR_green</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+    <transition id="tP_green">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tP_green</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+    <transition id="tC_green">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>1</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tC_green</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+    <transition id="tPhyellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>5</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tPhyellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="130" y="200" />
+        </graphics>
+        </transition>
+
+    <transition id="tAyellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>9</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tAyellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="142" y="212" />
+        </graphics>
+        </transition>
+
+    <transition id="tDyellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>9</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tDyellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="213" y="193" />
+        </graphics>
+        </transition>
+
+    <transition id="tMDyellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tMDyellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="213" y="193" />
+        </graphics>
+        </transition>
+
+    <transition id="tR_yellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>8</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tR_yellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+    <transition id="tP_yellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tP_yellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+    <transition id="tC_yellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>1</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tC_yellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+    <transition id="tSequenceyellow">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tSequenceyellow</value>
+        </name>
+        <graphics>
+          <position page="1" x="35" y="40" />
+        </graphics>
+        </transition>
+
+    <transition id="tPhred">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>6</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tPhred</value>
+        </name>
+        <graphics>
+          <position page="1" x="130" y="200" />
+        </graphics>
+        </transition>
+
+    <transition id="tAred">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>9</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tAred</value>
+        </name>
+        <graphics>
+          <position page="1" x="142" y="212" />
+        </graphics>
+        </transition>
+
+    <transition id="tDred">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>9</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tDred</value>
+        </name>
+        <graphics>
+          <position page="1" x="213" y="193" />
+        </graphics>
+        </transition>
+
+    <transition id="tMDred">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tMDred</value>
+        </name>
+        <graphics>
+          <position page="1" x="213" y="193" />
+        </graphics>
+        </transition>
+
+    <transition id="tR_red">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>8</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tR_red</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+    <transition id="tP_red">
+      <delay>
+        <graphics>
+          <offset page="1" x="20" y="16" />
+        </graphics>
+       <value>0</value>
+        </delay>
+      <name>
+        <graphics>
+          <offset page="1" x="20" y="0" />
+        </graphics>
+       <value>tP_red</value>
+        </name>
+        <graphics>
+          <position page="1" x="163" y="143" />
+        </graphics>
+        </transition>
+
+	<transition id="tC_red">
+		<delay>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>1</value>
+		</delay>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>tC_red</value>
+		</name>
+		<graphics>
+			<position page="1" x="163" y="143" />
+		</graphics>
+	</transition>
+
+	<transition id="tSequencered">
+		<delay>
+			<graphics>
+				<offset page="1" x="20" y="16" />
+			</graphics>
+			<value>0</value>
+		</delay>
+		<name>
+			<graphics>
+				<offset page="1" x="20" y="0" />
+			</graphics>
+			<value>tSequencered</value>
+		</name>
+		<graphics>
+			<position page="1" x="35" y="40" />
+		</graphics>
+	</transition>
+
+	<arc id="a1" source="Pstart" target="tstart">
+		<inscription>
+			<graphics>
+				<offset page="1" x="10" y="0" />
+			</graphics>
+			<value>1</value>
+		</inscription>
+		<graphics>
+			<position page="1" x="102" y="260" />
+		</graphics>
+	</arc>
+
+    <arc id="aStartT0" source="tstart" target="PStartgreen">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="130" y="220" />
+        </graphics>
+        </arc>
+
+    <arc id="aStartT1" source="tstart" target="PStartyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="130" y="220" />
+        </graphics>
+        </arc>
+
+    <arc id="aStartT2" source="tstart" target="PStartred">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="130" y="220" />
+        </graphics>
+        </arc>
+
+    <arc id="aEnd" source="tEnd" target="PEnd">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="530" y="265" />
+        </graphics>
+        </arc>
+
+    <arc id="aEndT1" source="PEndgreen" target="tEnd">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="482" y="250" />
+        </graphics>
+        </arc>
+
+    <arc id="aEndT2" source="PEndyellow" target="tEnd">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="482" y="250" />
+        </graphics>
+        </arc>
+
+    <arc id="aEndT3" source="PEndred" target="tEnd">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="482" y="250" />
+        </graphics>
+        </arc>
+
+    <arc id="aA1green" source="PStartgreen" target="tPhgreen">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="134" y="204" />
+        </graphics>
+        </arc>
+
+    <arc id="aA2green" source="tPhgreen" target="PA1green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>0</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="138" y="208" />
+        </graphics>
+        </arc>
+
+    <arc id="aA3green" source="tPhgreen" target="PA2green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="146" y="216" />
+        </graphics>
+        </arc>
+
+    <arc id="aA4green" source="PA1green" target="tAgreen">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="148" y="218" />
+        </graphics>
+        </arc>
+
+    <arc id="aA5green" source="tAgreen" target="PA2green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="150" y="220" />
+        </graphics>
+        </arc>
+
+    <arc id="aD1green" source="tAgreen" target="PD1green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="209" y="189" />
+        </graphics>
+        </arc>
+
+    <arc id="aD2green" source="tPhgreen" target="PD1green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD3green" source="PD1green" target="tDgreen">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD4green" source="tDgreen" target="PD2green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD5green" source="PD2green" target="tMDgreen">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD6green" source="tMDgreen" target="PD3green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aT1_green" source="PA2green" target="tR_green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT2_green" source="tR_green" target="PR1_green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT3_green" source="PR1_green" target="tP_green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT4_green" source="tP_green" target="PR2_green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT5_green" source="PR2_green" target="tC_green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT6_green" source="tC_green" target="PEndgreen">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT7_green" source="PD1green" target="tC_green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT8_green" source="PR2_green" target="tMDgreen">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aP1green" source="tC_green" target="P_green_PRECEDES_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aProc1_green" source="P1" target="tP_green">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="111" y="211" />
+        </graphics>
+        </arc>
+
+    <arc id="aProc2_green" source="tC_green" target="P1">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="111" y="211" />
+        </graphics>
+        </arc>
+
+    <arc id="aA1yellow" source="PStartyellow" target="tPhyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="134" y="204" />
+        </graphics>
+        </arc>
+
+    <arc id="aA2yellow" source="tPhyellow" target="PA1yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>0</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="138" y="208" />
+        </graphics>
+        </arc>
+
+    <arc id="aA3yellow" source="tPhyellow" target="PA2yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="146" y="216" />
+        </graphics>
+        </arc>
+
+    <arc id="aA4yellow" source="PA1yellow" target="tAyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="148" y="218" />
+        </graphics>
+        </arc>
+
+    <arc id="aA5yellow" source="tAyellow" target="PA2yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="150" y="220" />
+        </graphics>
+        </arc>
+
+    <arc id="aD1yellow" source="tAyellow" target="PD1yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="209" y="189" />
+        </graphics>
+        </arc>
+
+    <arc id="aD2yellow" source="tPhyellow" target="PD1yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD3yellow" source="PD1yellow" target="tDyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD4yellow" source="tDyellow" target="PD2yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD5yellow" source="PD2yellow" target="tMDyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD6yellow" source="tMDyellow" target="PD3yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aT1_yellow" source="PA2yellow" target="tR_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT2_yellow" source="tR_yellow" target="PR1_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT4_yellow" source="tP_yellow" target="PR2_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT5_yellow" source="PR2_yellow" target="tC_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT6_yellow" source="tC_yellow" target="PEndyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT7_yellow" source="PD1yellow" target="tC_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT8_yellow" source="PR2_yellow" target="tMDyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aP1yellow" source="tC_yellow" target="P_yellow_PRECEDES_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aT3_yellow" source="PR1_yellow" target="tSequenceyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aSeq1_yellow" source="tSequenceyellow" target="PSeq_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aSeq2_yellow" source="PSeq_yellow" target="tP_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aSequence1yellow" source="P_green_PRECEDES_yellow" target="tSequenceyellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aProc1_yellow" source="P1" target="tP_yellow">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="111" y="211" />
+        </graphics>
+        </arc>
+
+    <arc id="aProc2_yellow" source="tC_yellow" target="P1">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="111" y="211" />
+        </graphics>
+        </arc>
+
+    <arc id="aA1red" source="PStartred" target="tPhred">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="134" y="204" />
+        </graphics>
+        </arc>
+
+    <arc id="aA2red" source="tPhred" target="PA1red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>0</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="138" y="208" />
+        </graphics>
+        </arc>
+
+    <arc id="aA3red" source="tPhred" target="PA2red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="146" y="216" />
+        </graphics>
+        </arc>
+
+    <arc id="aA4red" source="PA1red" target="tAred">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="148" y="218" />
+        </graphics>
+        </arc>
+
+    <arc id="aA5red" source="tAred" target="PA2red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="150" y="220" />
+        </graphics>
+        </arc>
+
+    <arc id="aD1red" source="tAred" target="PD1red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="209" y="189" />
+        </graphics>
+        </arc>
+
+    <arc id="aD2red" source="tPhred" target="PD1red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD3red" source="PD1red" target="tDred">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD4red" source="tDred" target="PD2red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD5red" source="PD2red" target="tMDred">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aD6red" source="tMDred" target="PD3red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="211" y="191" />
+        </graphics>
+        </arc>
+
+    <arc id="aT1_red" source="PA2red" target="tR_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT2_red" source="tR_red" target="PR1_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT4_red" source="tP_red" target="PR2_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT5_red" source="PR2_red" target="tC_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT6_red" source="tC_red" target="PEndred">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT7_red" source="PD1red" target="tC_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT8_red" source="PR2_red" target="tMDred">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="159" y="139" />
+        </graphics>
+        </arc>
+
+    <arc id="aT3_red" source="PR1_red" target="tSequencered">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aSeq1_red" source="tSequencered" target="PSeq_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aSeq2_red" source="PSeq_red" target="tP_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aSequence1red" source="P_yellow_PRECEDES_red" target="tSequencered">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="19" y="24" />
+        </graphics>
+        </arc>
+
+    <arc id="aProc1_red" source="P1" target="tP_red">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="111" y="211" />
+        </graphics>
+        </arc>
+
+    <arc id="aProc2_red" source="tC_red" target="P1">
+      <inscription>
+        <graphics>
+          <offset page="1" x="10" y="0" />
+        </graphics>
+       <value>1</value>
+        </inscription>
+        <graphics>
+          <position page="1" x="111" y="211" />
+        </graphics>
+        </arc>
+
+    <firingRule>
+	    <value> </value>
+    </firingRule>
+
+    <name>unnamed</name>
+
+  </net>
+
+</pnml>

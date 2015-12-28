@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xsi:noNamespaceSchemaLocation="upnpnml.xsd">
+	<net id="n1" type="UPNPNML">
+		<place id = "p260">
+			<graphics>
+				<position x="78" y="136"/>
+			</graphics>
+			<name>
+				<value>pwgb</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p261">
+			<graphics>
+				<position x="203" y="136"/>
+			</graphics>
+			<name>
+				<value>pws</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p262">
+			<graphics>
+				<position x="349" y="136"/>
+			</graphics>
+			<name>
+				<value>psbuf</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p263">
+			<graphics>
+				<position x="477" y="137"/>
+			</graphics>
+			<name>
+				<value>prbuf</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p264">
+			<graphics>
+				<position x="272" y="51"/>
+			</graphics>
+			<name>
+				<value>pbus</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<transition id = "t157">
+			<graphics>
+				<position x="140" y="136"/>
+			</graphics>
+			<name>
+				<value>tgb</value>
+			</name>
+		</transition>
+		<transition id = "t158">
+			<graphics>
+				<position x="276" y="136"/>
+			</graphics>
+			<name>
+				<value>tsend</value>
+			</name>
+		</transition>
+		<transition id = "t159">
+			<graphics>
+				<position x="411" y="136"/>
+			</graphics>
+			<name>
+				<value>tcomm</value>
+			</name>
+		</transition>
+	<arc id = "a1423" source = "p260" target = "t157">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a1456" source = "t157" target = "p261">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a1500" source = "p261" target = "t158">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a1548" source = "t158" target = "p262">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a1595" source = "p262" target = "t159">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a1641" source = "t159" target = "p263">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a1675" source = "p264" target = "t157">
+		<graphics>
+			<position x = "140" y = "52"/>
+		</graphics>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a1966" source = "t159" target = "p264">
+		<graphics>
+			<position x = "412" y = "50"/>
+		</graphics>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	</net>
+</pnml>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:rt="http://pnmp.sf.net/EZRealtime" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://pnmp.sf.net/EZRealtime">
+  <xsd:simpleType name="SchedulingType">
+    <xsd:restriction base="xsd:NCName">
+      <xsd:enumeration value="P"/>
+      <xsd:enumeration value="NP"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="EZRealtimeSpec">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="task" type="rt:Task"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="1" name="processor" type="rt:Processor"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="message" type="rt:Message"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="EZRealtimeSpec" type="rt:EZRealtimeSpec"/>
+  <xsd:complexType name="Task">
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute default="0" name="period" type="xsd:string" use="required"/>
+    <xsd:attribute default="0" name="phase" type="xsd:string"/>
+    <xsd:attribute default="0" name="power" type="xsd:string" use="required"/>
+    <xsd:attribute default="0" name="release" type="xsd:string"/>
+    <xsd:attribute default="P" name="schedulingMode" type="rt:SchedulingType" use="required"/>
+    <xsd:attribute default="0" name="computing" type="xsd:string" use="required"/>
+    <xsd:attribute default="0" name="deadline" type="xsd:string" use="required"/>
+    <xsd:attribute default="ez123" name="oid" type="xsd:string" use="required"/>
+    <xsd:attribute name="precedesTasks" type="xsd:string"/>
+    <xsd:attribute name="precedesMessages" type="xsd:string"/>
+    <xsd:attribute name="excludesTasks" type="xsd:string"/>
+    <xsd:attribute name="processor" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Task" type="rt:Task"/>
+  <xsd:complexType name="Message">
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+    <xsd:attribute name="bus" type="xsd:string" use="required"/>
+    <xsd:attribute default="0" name="grantBus" type="xsd:string" use="required"/>
+    <xsd:attribute default="0" name="communication" type="xsd:string" use="required"/>
+    <xsd:attribute name="oid" type="xsd:string" use="required"/>
+    <xsd:attribute name="precedes" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Message" type="rt:Message"/>
+  <xsd:complexType name="Processor">
+    <xsd:attribute name="oid" type="xsd:string" use="required"/>
+    <xsd:attribute name="name" type="xsd:string" use="required"/>
+  </xsd:complexType>
+  <xsd:element name="Processor" type="rt:Processor"/>
+  <xsd:complexType name="SourceCode">
+    <xsd:attribute name="content" type="xsd:string" use="required"/>
+  </xsd:complexType>
+  <xsd:element name="SourceCode" type="rt:SourceCode"/>
+</xsd:schema>

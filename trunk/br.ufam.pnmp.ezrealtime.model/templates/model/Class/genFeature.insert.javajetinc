@@ -1,0 +1,56 @@
+<%if (genFeature.isListType() && genFeature.isReferenceType() && genFeature.isChangeable()) {%>
+  <%if (isInterface) {%>
+	/**
+	 * Adds the specified {@link <%=genFeature.getQualifiedListItemType()%>} at the specified index in the '<em><b><%=genFeature.getFormattedName()%></b></em>' <%=genFeature.getFeatureKind()%>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param index The index at which to add the {@link <%=genFeature.getQualifiedListItemType()%>}.
+	 * @param value The {@link <%=genFeature.getQualifiedListItemType()%>} to be added.
+	 * @see #<%=genFeature.getGetAccessor()%>()
+	 * @generated
+	 */
+  <%} else {%>
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+  <%}%>
+  <%if (!isImplementation) {%>
+	void add<%=genFeature.getCapName()%>(int index, <%=genFeature.getListItemType()%> value);
+
+  <%} else {%>
+	public void add<%=genFeature.getCapName()%>(int index, <%=genFeature.getListItemType()%> value)
+	{
+		<%=genFeature.getGetAccessor()%>().add(index, value);
+	}
+
+  <%}%>
+  <%if (isInterface) {%>
+	/**
+	 * Removes the specified {@link <%=genFeature.getQualifiedListItemType()%>} from the '<em><b><%=genFeature.getFormattedName()%></b></em>' <%=genFeature.getFeatureKind()%>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value The {@link <%=genFeature.getQualifiedListItemType()%>} to be removed.
+	 * @return Whether the {@link <%=genFeature.getQualifiedListItemType()%>} was successfully removed.
+	 * @see #<%=genFeature.getGetAccessor()%>()
+	 * @generated
+	 */
+  <%} else {%>
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+  <%}%>
+  <%if (!isImplementation) {%>
+	boolean remove<%=genFeature.getCapName()%>(<%=genFeature.getListItemType()%> value);
+
+  <%} else {%>
+	public boolean remove<%=genFeature.getCapName()%>(<%=genFeature.getListItemType()%> value)
+	{
+		return <%=genFeature.getGetAccessor()%>().remove(value);
+	}
+
+  <%}%>
+<%}%>

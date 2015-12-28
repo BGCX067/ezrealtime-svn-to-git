@@ -1,0 +1,14 @@
+import core;
+import classifiers;
+
+String getFileName(classifiers::File file) :
+	if (file.name != null) then (
+		if (file.type == "" || file.type == FileType::C_SOURCE ) then (
+			file.name+".c"
+		)else if (file.type == FileType::C_HEADER ) then (
+			file.name+".h"
+		)
+	)else (
+		"default.ezrt"
+	)
+;	

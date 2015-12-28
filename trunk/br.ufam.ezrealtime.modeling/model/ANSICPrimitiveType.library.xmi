@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ezrt:Program xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:classifiers="http://ezrealtime.org/meta/1.0.0/classifiers" xmlns:datatype="http://ezrealtime.org/meta/1.0.0/datatype" xmlns:ezrt="http://ezrealtime.org/meta/1.0.0/ezrealtime" xsi:schemaLocation="http://ezrealtime.org/meta/1.0.0/classifiers ../dsl/metamodel/ezrealtime.classifiers.ecore http://ezrealtime.org/meta/1.0.0/datatype ../dsl/metamodel/ezrealtime.datatypes.ecore http://ezrealtime.org/meta/1.0.0/ezrealtime ../dsl/metamodel/ezrealtime.metamodel.ecore">
+  <elements xsi:type="classifiers:Module" moduleName="ANSIC Primitive Types">
+    <ownedType xsi:type="datatype:PrimitiveDataType" defaultValueLiteral="0" name="int"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="float"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="double"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="char"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="void"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" defaultValueLiteral="0" name="short int"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" defaultValueLiteral="0" name="unsigned short int"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="short"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" defaultValueLiteral="0" name="unsigned int"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="long int"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="signed char"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="unsigned char"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="long double"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="sfr16"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="sfr"/>
+    <ownedType xsi:type="datatype:PrimitiveDataType" name="sbit"/>
+  </elements>
+</ezrt:Program>

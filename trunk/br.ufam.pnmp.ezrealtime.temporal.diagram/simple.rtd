@@ -1,0 +1,5 @@
+Proc=P1
+tC_t1=3
+tC_t2=3
+#
+(tstart,0) (tPht1,0) (tPht2,0) (tR_t1,0) (tP_t1,0) (tC_t1,3) (tR_t2,0) (tP_t2,0) (tC_t2,3) (tAt2,0) (tAt1,2) (tR_t1,0) (tR_t2,0) (tP_t2,0) (tC_t2,3) (tP_t1,0) (tAt2,1) (tC_t1,2) (tR_t2,0) (tP_t2,0)(tAt1,2) (tC_t2,1) (tAt2,1) (tR_t1,0) (tP_t1,0) (tC_t1,3) (tR_t2,0) (tP_t2,0) (tC_t2,3) (tEnd,0)

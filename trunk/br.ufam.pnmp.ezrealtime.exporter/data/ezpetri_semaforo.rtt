@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<realtime-table>
+    <task oid="1151891686848" name="green" release="0" period="9" phase="0" processor="P1" schedulingModel="NP" power="10">
+        <code><![CDATA[P1=0x01;
+]]></code>
+        <time>
+            <computing value="1"/>
+            <deadline value="9"/>
+        </time>
+        <preceds>
+            <task-ref name="yellow"/>
+        </preceds>
+    </task>
+    <task oid="1151891690363" name="yellow" release="0" period="9" phase="5" processor="P1" schedulingModel="NP" power="2">
+        <code><![CDATA[P1=0x02;
+]]></code>
+        <time>
+            <computing value="1"/>
+            <deadline value="9"/>
+        </time>
+        <preceds>
+            <task-ref name="red"/>
+        </preceds>
+    </task>
+    <task oid="1151891693528" name="red" release="0" period="9" phase="6" processor="P1" schedulingModel="NP" power="5">
+        <code><![CDATA[P1 = 0x04;
+]]></code>
+        <time>
+            <computing value="1"/>
+            <deadline value="9"/>
+        </time>
+    </task>
+</realtime-table>

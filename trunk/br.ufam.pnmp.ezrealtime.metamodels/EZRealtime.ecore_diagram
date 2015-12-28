@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:id="_xzL90FcgEdyaDIJaWGT-1g" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_z1IAYFcgEdyaDIJaWGT-1g" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_z1a7UFcgEdyaDIJaWGT-1g" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_z2KiMFcgEdyaDIJaWGT-1g" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2KiMVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2KiMlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2KiM1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2UTMFcgEdyaDIJaWGT-1g" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTMVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTMlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTM1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2UTNFcgEdyaDIJaWGT-1g" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTNVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTNlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTN1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_z1IAYVcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EClass" href="EZRealtime.ecore#//EZRealtimeSpec"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z1IAYlcgEdyaDIJaWGT-1g" x="55" y="219"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_z2UTOFcgEdyaDIJaWGT-1g" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_z2UTO1cgEdyaDIJaWGT-1g" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_z2UTPFcgEdyaDIJaWGT-1g" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTPVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTPlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTP1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2UTQFcgEdyaDIJaWGT-1g" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTQVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTQlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTQ1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2UTRFcgEdyaDIJaWGT-1g" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTRVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTRlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTR1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_z2UTOVcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EClass" href="EZRealtime.ecore#//Task"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2UTOlcgEdyaDIJaWGT-1g" x="823" y="58"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_z2UTSFcgEdyaDIJaWGT-1g" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_z2UTS1cgEdyaDIJaWGT-1g" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_z2UTTFcgEdyaDIJaWGT-1g" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTTVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTTlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTT1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2UTUFcgEdyaDIJaWGT-1g" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTUVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTUlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTU1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2UTVFcgEdyaDIJaWGT-1g" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2UTVVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2UTVlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2UTV1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_z2UTSVcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EClass" href="EZRealtime.ecore#//Message"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2UTSlcgEdyaDIJaWGT-1g" x="439" y="55"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_z2ddIFcgEdyaDIJaWGT-1g" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_z2ddI1cgEdyaDIJaWGT-1g" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_z2ddJFcgEdyaDIJaWGT-1g" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2ddJVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2ddJlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2ddJ1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2ddKFcgEdyaDIJaWGT-1g" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2ddKVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2ddKlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2ddK1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2ddLFcgEdyaDIJaWGT-1g" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2ddLVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2ddLlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2ddL1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_z2ddIVcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EClass" href="EZRealtime.ecore#//Processor"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2ddIlcgEdyaDIJaWGT-1g" x="492" y="420"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_z2ddMFcgEdyaDIJaWGT-1g" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_z2ddM1cgEdyaDIJaWGT-1g" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_z2ddNFcgEdyaDIJaWGT-1g" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2ddNVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2ddNlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2ddN1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2ddOFcgEdyaDIJaWGT-1g" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2ddOVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2ddOlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2ddO1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2ddPFcgEdyaDIJaWGT-1g" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2ddPVcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2ddPlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2ddP1cgEdyaDIJaWGT-1g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_z2ddMVcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EClass" href="EZRealtime.ecore#//SourceCode"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2ddMlcgEdyaDIJaWGT-1g" x="55" y="338"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_z2ddQFcgEdyaDIJaWGT-1g" type="2005">
+    <children xmi:type="notation:Node" xmi:id="_z2nOIFcgEdyaDIJaWGT-1g" type="5005"/>
+    <children xmi:type="notation:Node" xmi:id="_z2nOIVcgEdyaDIJaWGT-1g" type="7011">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2nOIlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2nOI1cgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2nOJFcgEdyaDIJaWGT-1g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_z2nOJVcgEdyaDIJaWGT-1g" type="7012">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2nOJlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2nOJ1cgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2nOKFcgEdyaDIJaWGT-1g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_z2ddQVcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EEnum" href="EZRealtime.ecore#//SchedulingType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2ddQlcgEdyaDIJaWGT-1g" x="55" y="464"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_z2nOKVcgEdyaDIJaWGT-1g" type="2004">
+    <children xmi:type="notation:Node" xmi:id="_z2nOLFcgEdyaDIJaWGT-1g" type="5004"/>
+    <children xmi:type="notation:Node" xmi:id="_z2nOLVcgEdyaDIJaWGT-1g" type="7010">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_z2nOLlcgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_z2nOL1cgEdyaDIJaWGT-1g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_z2nOMFcgEdyaDIJaWGT-1g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_z2nOKlcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EDataType" href="EZRealtime.ecore#//SchedulingTypeObject"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2nOK1cgEdyaDIJaWGT-1g" x="55" y="594"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_xzoCsFcgEdyaDIJaWGT-1g"/>
+  <element xmi:type="ecore:EPackage" href="EZRealtime.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_0XGFAFcgEdyaDIJaWGT-1g" type="4003" source="_z1IAYFcgEdyaDIJaWGT-1g" target="_z2UTOFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0XP2AFcgEdyaDIJaWGT-1g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0XP2AVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0XP2AlcgEdyaDIJaWGT-1g" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0XP2A1cgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0XGFAVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0XGFAlcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//EZRealtimeSpec/task"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0XGFA1cgEdyaDIJaWGT-1g" points="[162, 0, -606, 93]$[384, 0, -384, 93]$[606, -93, -162, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_0fvDoFcgEdyaDIJaWGT-1g" type="4003" source="_z1IAYFcgEdyaDIJaWGT-1g" target="_z2ddIFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0fvDpFcgEdyaDIJaWGT-1g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0fvDpVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0fvDplcgEdyaDIJaWGT-1g" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0fvDp1cgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0fvDoVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0fvDolcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//EZRealtimeSpec/processor"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0fvDo1cgEdyaDIJaWGT-1g" points="[162, 0, -990, -112]$[384, 112, -768, 0]$[990, 112, -162, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_0f40oFcgEdyaDIJaWGT-1g" type="4003" source="_z1IAYFcgEdyaDIJaWGT-1g" target="_z2UTSFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0f40pFcgEdyaDIJaWGT-1g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0f40pVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0f40plcgEdyaDIJaWGT-1g" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0f40p1cgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0f40oVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0f40olcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//EZRealtimeSpec/message"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0f40o1cgEdyaDIJaWGT-1g" points="[162, 0, -222, 128]$[222, -128, -162, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_0gLvkFcgEdyaDIJaWGT-1g" type="4002" source="_z2UTOFcgEdyaDIJaWGT-1g" target="_z2UTOFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0gLvlFcgEdyaDIJaWGT-1g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0gLvlVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0gVgkFcgEdyaDIJaWGT-1g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0gVgkVcgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0gLvkVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0gLvklcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//Task/precedesTasks"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0gLvk1cgEdyaDIJaWGT-1g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_0g7WcFcgEdyaDIJaWGT-1g" type="4002" source="_z2UTOFcgEdyaDIJaWGT-1g" target="_z2UTSFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0g7WdFcgEdyaDIJaWGT-1g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0g7WdVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0g7WdlcgEdyaDIJaWGT-1g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0g7Wd1cgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0g7WcVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0g7WclcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//Task/precedesMessages"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0g7Wc1cgEdyaDIJaWGT-1g" points="[-162, 0, 222, 35]$[-222, -35, 162, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_0hFHcFcgEdyaDIJaWGT-1g" type="4002" source="_z2UTOFcgEdyaDIJaWGT-1g" target="_z2UTOFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0hFHdFcgEdyaDIJaWGT-1g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0hFHdVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0hFHdlcgEdyaDIJaWGT-1g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0hFHd1cgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0hFHcVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0hFHclcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//Task/excludesTasks"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0hFHc1cgEdyaDIJaWGT-1g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_0hFHeFcgEdyaDIJaWGT-1g" type="4002" source="_z2UTOFcgEdyaDIJaWGT-1g" target="_z2ddIFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0hFHfFcgEdyaDIJaWGT-1g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0hFHfVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0hFHflcgEdyaDIJaWGT-1g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0hFHf1cgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0hFHeVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0hFHelcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//Task/processor"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0hFHe1cgEdyaDIJaWGT-1g" points="[162, 0, -222, -205]$[222, 205, -162, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_0hO4cFcgEdyaDIJaWGT-1g" type="4002" source="_z2UTSFcgEdyaDIJaWGT-1g" target="_z2UTOFcgEdyaDIJaWGT-1g">
+    <children xmi:type="notation:Node" xmi:id="_0hO4dFcgEdyaDIJaWGT-1g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0hO4dVcgEdyaDIJaWGT-1g" y="40"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_0hO4dlcgEdyaDIJaWGT-1g" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_0hO4d1cgEdyaDIJaWGT-1g" y="60"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_0hO4cVcgEdyaDIJaWGT-1g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_0hO4clcgEdyaDIJaWGT-1g"/>
+    <element xmi:type="ecore:EReference" href="EZRealtime.ecore#//Message/precedes"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0hO4c1cgEdyaDIJaWGT-1g" points="[162, 0, -222, -35]$[222, 35, -162, 0]"/>
+  </edges>
+</notation:Diagram>

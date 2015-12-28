@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xsi:noNamespaceSchemaLocation="upnpnml.xsd">
+	<net id="n1" type="UPNPNML">
+		<place id = "p87">
+			<graphics>
+				<position x="92" y="235"/>
+			</graphics>
+			<name>
+				<value>ps</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p88">
+			<graphics>
+				<position x="90" y="141"/>
+			</graphics>
+			<name>
+				<value>pwa</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p89">
+			<graphics>
+				<position x="254" y="236"/>
+			</graphics>
+			<name>
+				<value>pwd</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<place id = "p90">
+			<graphics>
+				<position x="258" y="142"/>
+			</graphics>
+			<name>
+				<value>pwr</value>
+			</name>
+			<initialMarking>
+				<value>0</value>
+			</initialMarking>
+			<attributeX>
+				<value>0.00</value>
+			</attributeX>
+			<attributeY>
+				<value>0</value>
+			</attributeY>
+		</place>
+		<transition id = "t58">
+			<graphics>
+				<position x="169" y="235"/>
+			</graphics>
+			<name>
+				<value>tph</value>
+			</name>
+		</transition>
+		<transition id = "t59">
+			<graphics>
+				<position x="173" y="141"/>
+			</graphics>
+			<name>
+				<value>ta</value>
+			</name>
+		</transition>
+	<arc id = "a955" source = "p87" target = "t58">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a956" source = "t58" target = "p88">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a957" source = "t58" target = "p89">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a958" source = "t58" target = "p90">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a959" source = "p88" target = "t59">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a960" source = "t59" target = "p90">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	<arc id = "a961" source = "t59" target = "p89">
+		<graphics/>
+		<inscription>
+			<value>1</value>
+			<graphics/>
+		</inscription>
+		<type value = "normal"/>
+	</arc>
+	</net>
+</pnml>

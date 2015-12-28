@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ebundle xmlns="http://pnmp.sf.net/ezrealtime/model"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pnmp.sf.net/ezrealtime/model file:/Users/fabianocruz/workspace/br.ufam.ezrealtime.ebundle.app/model/model.xsd">
+    <manifest version="1.0">
+        <id>id0</id>
+        <name>name0</name>
+        <provider>provider0</provider>
+        <url>url0</url>
+        <entryPoint>entryPoint0</entryPoint>
+    </manifest>
+    <executionEnvironment>
+    </executionEnvironment>
+    <build>
+        <finalName>finalName0</finalName>
+        <assemble>
+        </assemble>
+        <compile>
+        </compile>
+        <link>
+        </link>
+    </build>
+    <dependencies>
+        <fileDependencies>
+        </fileDependencies>
+        <libraries>
+        </libraries>
+    </dependencies>
+    <interface>
+        <operations>
+            <headerFile>headerFile0</headerFile>
+            <returnType>returnType0</returnType>
+            <functionName>functionName0</functionName>
+            <parameters>
+            </parameters>
+        </operations>
+        <attributes>
+        </attributes>
+    </interface>
+</ebundle>

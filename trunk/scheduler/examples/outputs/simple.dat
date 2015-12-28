@@ -1,0 +1,9 @@
+Proc=P1
+tC_A=2
+tC_B=3
+#
+Proc=P2
+tC_C=2
+tC_D=3
+#
+(tstart,0,0)(tPhA,0,0)(tR_A,0,0)(tPhB,0,0)(tPhC,0,0)(tR_C,0,0)(tPhD,0,0)(tP_A,0,0)(tP_C,0,0)(tC_A,2,0)(tC_C,0,0)(tR_B,0,0)(tR_D,0,0)(tP_B,0,0)(tP_D,0,0)(tC_B,3,0)(tC_D,0,0)(tAB,1,0)(tAD,0,0)(tR_B,2,0)(tR_D,0,0)(tAA,0,0)(tR_A,0,0)(tAC,0,0)(tR_C,0,0)(tP_D,0,0)(tP_B,0,0)(tC_B,3,0)(tC_D,0,0)(tP_A,0,0)(tP_C,0,0)(tAB,1,0)(tAD,0,0)(tC_A,1,0)(tC_C,0,0)(tR_B,1,0)(tR_D,0,0)(tP_B,0,0)(tP_D,0,0)(tAA,2,0)(tR_A,0,0)(tAC,0,0)(tC_B,1,0)(tC_D,0,0)(tR_C,0,0)(tP_A,0,0)(tP_C,0,0)(tAB,1,0)(tAD,0,0)(tC_A,1,0)(tC_C,0,0)(tR_B,1,0)(tR_D,0,0)(tP_B,0,0)(tP_D,0,0)(tC_B,3,0)(tC_D,0,0)(tEnd,0,0)

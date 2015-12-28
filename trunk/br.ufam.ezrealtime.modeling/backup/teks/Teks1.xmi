@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<teks:Teks xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:teks="http://teksme.org/meta/1.0.0/teks" xsi:schemaLocation="http://teksme.org/meta/1.0.0/teks teks.ecore">
+  <instance title="Time and attendance" ID="6514265" note="by EduTeks project " author="Fabiano">
+    <communicationChannel>SMS</communicationChannel>
+    <language>English</language>
+    <choice xsi:type="teks:FreeText" question="What is your employee ID" mandatory="true" ID="">
+      <answer text="" ID="true"/>
+    </choice>
+    <choice xsi:type="teks:FreeText" question="Number of male students"/>
+    <choice xsi:type="teks:FreeText" question="Number of female students"/>
+    <replyMessage textMessage="22 is the Earth Day, take the students to plant a tree to commemorate" ID=""/>
+    <settings>
+      <responseRestrictions type="Participants Only" blockRepeat="true" moderateFirst="true"/>
+    </settings>
+  </instance>
+  <responses>
+    <response>
+      <rawMessage textMessage="17652727 15 20" ID="17625" server="" sender="28716371" partNumber="1/1"/>
+      <setValue choiceRef="//@instance/@choice.0" value="17652727"/>
+      <setValue choiceRef="//@instance/@choice.1" value="15"/>
+      <setValue choiceRef="//@instance/@choice.2" value="20"/>
+    </response>
+  </responses>
+</teks:Teks>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/br.ufam.ezrealtime.modeling/src"
+    modelPluginID="br.ufam.ezrealtime.modeling" modelName="Ezrealtime" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.uml2.uml.ecore.exporter">
+    <genAnnotations source="selectedPackages">
+      <details key="http://ezrealtime.org/meta/1.0.0/ezrealtime" value="ezrealtime.metamodel.uml"/>
+      <details key="http://ezrealtime.org/meta/1.0.0/core" value="ezrealtime.core.uml"/>
+      <details key="http://ezrealtime.org/meta/1.0.0/block" value="ezrealtime.block.uml"/>
+      <details key="http://ezrealtime.org/meta/1.0.0/datatype" value="ezrealtime.datatypes.uml"/>
+    </genAnnotations>
+    <details key="directoryURI" value="."/>
+    <details key="SUBSETS_ANNOTATIONS" value="PROCESS"/>
+    <details key="REDEFINES_ANNOTATIONS" value="PROCESS"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="DOCUMENTATION_ANNOTATIONS" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="IGNORE"/>
+    <details key="UNION_ANNOTATIONS" value="PROCESS"/>
+    <details key="BODY_ANNOTATIONS" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>ezrealtime.metamodel.ecore</foreignModel>
+  <genPackages prefix="Ezrealtime" resource="XML" disposableProviderFactory="true"
+      ecorePackage="ezrealtime.metamodel.ecore#/">
+    <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.uml2.uml.ecore.exporter">
+      <genAnnotations source="ezrealtime.metamodel.uml"/>
+    </genAnnotations>
+    <genClasses ecoreClass="ezrealtime.metamodel.ecore#//Program">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.metamodel.ecore#//Program/container"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.metamodel.ecore#//Program/elementRef"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.metamodel.ecore#//Program/annotations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.metamodel.ecore#//Program/comments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.metamodel.ecore#//Program/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.metamodel.ecore#//Program/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.metamodel.ecore#//Program/lastModified"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.metamodel.ecore#//Program/elements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.metamodel.ecore#//Program/copyright"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.metamodel.ecore#//Program/website"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.metamodel.ecore#//Program/ownedRules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.metamodel.ecore#//Program/resource"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Core" resource="XML" disposableProviderFactory="true" ecorePackage="ezrealtime.core.ecore#/">
+    <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.uml2.uml.ecore.exporter">
+      <genAnnotations source="ezrealtime.core.uml"/>
+    </genAnnotations>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.core.ecore#//RelationshipType">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.core.ecore#//RelationshipType/includes"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.core.ecore#//RelationshipType/excludes"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.core.ecore#//RelationshipType/association"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.core.ecore#//RelationshipType/delegate"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.core.ecore#//RelationshipType/realizes"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//EzRealtimeObject"/>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//ModelElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//ModelElement/annotations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//ModelElement/comments"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.core.ecore#//Comment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//Comment/body"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//Comment/ownerElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//Comment/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//Comment/created"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.core.ecore#//Instance"/>
+    <genClasses ecoreClass="ezrealtime.core.ecore#//Annotation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//Annotation/annotation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//Annotation/element"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//Annotation/entry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//Annotation/source"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.core.ecore#//AnnotationMapEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//AnnotationMapEntry/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//AnnotationMapEntry/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//BehavioralStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//BehavioralStructure/defaultValueLiteral"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//BehavioralStructure/unique"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//BehavioralStructure/loweBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//BehavioralStructure/ordered"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//BehavioralStructure/upperBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//BehavioralStructure/changeable"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//GraphicalModel"/>
+    <genClasses ecoreClass="ezrealtime.core.ecore#//Relationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//Relationship/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//Relationship/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//Relationship/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.core.ecore#//Relationship/type"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//Rule">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//Rule/onwer"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//Resource"/>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//ImplementationModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//ImplementationModel/snippet"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//TypeElement"/>
+    <genClasses image="false" ecoreClass="ezrealtime.core.ecore#//ContainableElement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//ContainableElement/ownerContainer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.core.ecore#//ContainableElement/nestedContainer"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Classifiers" ecorePackage="ezrealtime.classifiers.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.classifiers.ecore#//VisibilityType">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//VisibilityType/public"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//VisibilityType/private"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.classifiers.ecore#//Stereotype">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/default"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/file"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/nonFunctionalReqs"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/constraints"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/valueSpec"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/dataType"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/struct"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/enum"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/computingResource"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/bus"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/module"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//Stereotype/embeddedBlock"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.classifiers.ecore#//CLangKeywords">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/auto"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/break"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/case"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/char"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/const"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/continue"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/default"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/do"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/double"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/else"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/enum"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/extern"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/float"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/for"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/goto"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/if"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/int"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/long"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/register"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/return"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/short"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/signed"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/sizeof"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/static"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/struct"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/switch"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/typedef"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/union"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/unsigned"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/void"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/volatile"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//CLangKeywords/while"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.classifiers.ecore#//PreprocessorType">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/default"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/define"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/include"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/if"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/ifdef"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/ifndef"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/else"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/elif"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/endif"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//PreprocessorType/pragma"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.classifiers.ecore#//MemorySpaceKind">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//MemorySpaceKind/default"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//MemorySpaceKind/data"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//MemorySpaceKind/xdata"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//MemorySpaceKind/pdata"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.classifiers.ecore#//InterrupType">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//InterrupType/HardwareInterruption"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//InterrupType/ProcessorDetectedException"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//InterrupType/ProgrammedException"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//InterrupType/Undef"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//InterrupType/Other"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.classifiers.ecore#//FileType">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//FileType/C_SOURCE"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//FileType/ASM_SRC"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//FileType/ASM_HEADER"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.classifiers.ecore#//FileType/C_HEADER"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="ezrealtime.classifiers.ecore#//Abstraction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Abstraction/upperBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Abstraction/lowerBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Abstraction/ordered"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Abstraction/unique"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Abstraction/required"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Abstraction/visibility"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.classifiers.ecore#//Classifier">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Classifier/ownedPorts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Classifier/ownedRule"/>
+      <genOperations ecoreOperation="ezrealtime.classifiers.ecore#//Classifier/getClassifier"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.classifiers.ecore#//Constraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Constraint/constraint"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Processor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Processor/name"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Processor/stereotype"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.classifiers.ecore#//HardwareResource"/>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Bus">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Bus/name"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Bus/stereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Target">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Target/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Target/settings"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Target/FID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Target/partNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Module">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Module/moduleName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Module/ownedType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Module/resource"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Module/stereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//File">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/name"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/stereotype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//File/preprocessor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//File/ownedTask"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//File/relatedFiles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//File/feature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/refLocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/relativePath"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//File/ownedPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/toolChain"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/release"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/commandLine"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//File/lastModified"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//EntryPoint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//EntryPoint/precondition"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Code">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Code/ownerElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Code/code"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Message">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Message/precedes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Message/bus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Message/grantBus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Message/communication"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Task">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Task/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/parameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/precondition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/postcondition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/bodycondition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/returnType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/precedesTask"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/excludesTask"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/file"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/feature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Task/taskReference"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//TaskRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//TaskRef/task"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//TaskRef/argument"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//InterrupServiceRoutine">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//InterrupServiceRoutine/priority"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Parameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Parameter/memorySpace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Parameter/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Parameter/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Parameter/task"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Parameter/dataBinding"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//ArgumentPassing">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//ArgumentPassing/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.classifiers.ecore#//StructuralFeature">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//StructuralFeature/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//StructuralFeature/dataBinding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//StructuralFeature/changeable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//StructuralFeature/unsettable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//StructuralFeature/defaultValueLiteral"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//StructuralFeature/derived"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//PreprocessorDirective">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//PreprocessorDirective/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//PreprocessorDirective/containingFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//PreprocessorDirective/type"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//InterruptPreprocessorDirective"/>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Reference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Reference/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Reference/containment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Reference/biderectional"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Reference/opposite"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Reference/container"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.classifiers.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Variable/memorySpace"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.classifiers.ecore#//Variable/variableType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.classifiers.ecore#//Variable/name"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Block" resource="XML" disposableProviderFactory="true" ecorePackage="ezrealtime.block.ecore#/">
+    <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.uml2.uml.ecore.exporter">
+      <genAnnotations source="ezrealtime.block.uml"/>
+    </genAnnotations>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.block.ecore#//DataWireType">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.block.ecore#//DataWireType/EXTENSION_POINT"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.block.ecore#//DataWireType/SOCKET"/>
+    </genEnums>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//Block">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Block/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Block/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Block/draggedIcon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Block/icon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Block/contextHelpFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Block/copyright"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Block/configuration"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Block/stereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//Configuration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Configuration/ownedDatahub"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Configuration/extension"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//Datahub">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Datahub/extensions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Datahub/visible"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//ExtensionPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//ExtensionPoint/ID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//ExtensionPoint/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//ExtensionPoint/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//ExtensionPoint/deprecate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//ExtensionPoint/icon"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//ExtensionPoint/configuration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//ExtensionPoint/property"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Property/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Property/icon"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Property/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Property/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//Property/memorySpace"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//Port">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Port/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Port/exposedInterface"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//Port/requiredInterface"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//DataInput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//DataInput/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//DataOutput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.block.ecore#//DataOutput/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.block.ecore#//DataWire">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.block.ecore#//DataWire/type"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Datatype" resource="XML" disposableProviderFactory="true" ecorePackage="ezrealtime.datatypes.ecore#/">
+    <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.uml2.uml.ecore.exporter">
+      <genAnnotations source="ezrealtime.datatypes.uml"/>
+    </genAnnotations>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ezrealtime.datatypes.ecore#//TypeDecorator">
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.datatypes.ecore#//TypeDecorator/default"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.datatypes.ecore#//TypeDecorator/dataType"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.datatypes.ecore#//TypeDecorator/struct"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.datatypes.ecore#//TypeDecorator/enum"/>
+      <genEnumLiterals ecoreEnumLiteral="ezrealtime.datatypes.ecore#//TypeDecorator/union"/>
+    </genEnums>
+    <genClasses ecoreClass="ezrealtime.datatypes.ecore#//DataType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//DataType/defaultValueLiteral"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//DataType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.datatypes.ecore#//PrimitiveDataType"/>
+    <genClasses image="false" ecoreClass="ezrealtime.datatypes.ecore#//StructuredDataType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.datatypes.ecore#//StructuredDataType/member"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//StructuredDataType/instanceTypeName"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ezrealtime.datatypes.ecore#//IntegralType"/>
+    <genClasses ecoreClass="ezrealtime.datatypes.ecore#//Structure">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Structure/stereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.datatypes.ecore#//Member">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Member/memory"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ezrealtime.datatypes.ecore#//Member/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Member/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Member/byte"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.datatypes.ecore#//Member/structure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Member/defaultValueLiteral"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Member/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.datatypes.ecore#//Union">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Union/stereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.datatypes.ecore#//Enumeration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ezrealtime.datatypes.ecore#//Enumeration/literal"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//Enumeration/stereotype"/>
+    </genClasses>
+    <genClasses ecoreClass="ezrealtime.datatypes.ecore#//EnumerationLiteral">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ezrealtime.datatypes.ecore#//EnumerationLiteral/enumeration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//EnumerationLiteral/literal"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//EnumerationLiteral/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ezrealtime.datatypes.ecore#//EnumerationLiteral/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

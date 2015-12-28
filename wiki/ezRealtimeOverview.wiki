@@ -1,0 +1,15 @@
+#summary ezRealtime Overview
+#labels Featured
+
+===ezRealtime Overview===
+
+Model-driven Engineering (MDE) has been widely advocated as an effective approach to deal with the complexity in the development of modern softwares. MDE can be seen as an integrated approach combining existing techniques, such as DSL (Domain-Specific Languages) and tranformation engines. DSLs are also called problem-oriented, application-oriented or task-specific. Examples of DSLs are BNF or Backus-Naur Form (syntax definition), HTML (hypertext markup), SQL (structured query in databases) and VHDL (hardware description).
+
+The approach proposed in this project is centered on the concept of MDE and creates an integrated development environment (IDE - Integrated Development Environment) and graphical modeling tool for high-level specification and software synthesis of Embedded Real-Time Systems.
+
+A domain-specific modeling language (DSML) proposed in this project, provides the basis for the modeling methodology. During the modeling process, a high-level model specification is automatically translated into a Timed Petri Net (TPN) formalism. The TPN imposes a mathematically defined semantics that allows for model-checking and verification. Also, it can detect design faults at early stages of the design cycle in order to reduce time-to-market as much as possible. 
+
+The main goal of this project is to to simplify the development and maintenance of embedded and real-time software. This work provides a coherent framework, named ezRealtime, which aims to alleviate the software development activity by raising the level of domain abstractions and semantics, allowing developers to focus on the concepts of the problem domain, instead of the code concepts in the implementation domain.
+
+
+*Keywords*: Real-time and embedded systems, Modeling methodologies, Formal methods, Petri Nets, Automatic synthesis, Domain engineering, Design Tools and Techniques, Eclipse, Modeling Languages, Model Transformation Languages.

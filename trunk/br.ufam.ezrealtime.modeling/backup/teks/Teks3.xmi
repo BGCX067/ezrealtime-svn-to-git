@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<teks:Teks xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:teks="http://teksme.org/meta/1.0.0/teks" xsi:schemaLocation="http://teksme.org/meta/1.0.0/teks teks.ecore">
+  <campaign accountID="761537617" applicationID="1397198738">
+    <instance title="Simple Trivia Contest" ID="17638716" note="Today we have more and more marketers incorporating Trivia into their live events to pose interesting questions, build brand awareness, and offer prizes" author="Fabiano Cruz" lastModified="2009-12-15T10:09:37.000-0500">
+      <choice xsi:type="teks:FreeText" question="How much trivia do you remember?" mandatory="true" keyword=""/>
+      <choice xsi:type="teks:MultipleChoice" question="What would the Barbie Doll's measurements be if she were life-size?" mandatory="true" ID="12873981749">
+        <answer text="39" keyword="39" autoKeyword="false" defaultValue=""/>
+        <answer text="21" keyword="21" autoKeyword="false"/>
+        <answer text="33" keyword="33" autoKeyword="false" defaultValue=""/>
+      </choice>
+      <settings expirationDate="2010-01-15T10:09:37.000-0500" scheduleStartDate="2009-12-15T10:09:37.000-0500" passive="false" suspendOnFailure="true" startMessage="Welcome to T&#xe8;ksMe! Trivia is open and accepting responses. Good Luck!">
+        <responseRestrictions anonymous="true" blockRepeat="true" moderateFirst="true"/>
+        <replyMessage textMessage="Answer trivia questions and qualify for prizes valued at up to $500. Over half of our players qualify!" sender="88542"/>
+        <replyMessage textMessage="Thanks for participating!" sender="88542"/>
+        <communicationChannel>SMS</communicationChannel>
+        <language>English</language>
+        <language>Portuguese</language>
+      </settings>
+    </instance>
+    <responses>
+      <response dateTime="2009-12-15T10:09:37.000-0500">
+        <rawMessage textMessage="56 33" ID="" gateway="Clickatell" originator="2028129412" partNumber="1/1" messageType=""/>
+        <setValue choiceRef="//@campaign/@instance/@choice.1" answerRef="//@campaign/@instance/@choice.1/@answer.2" value="33"/>
+        <setValue choiceRef="//@campaign/@instance/@choice.0" value="56"/>
+      </response>
+    </responses>
+  </campaign>
+</teks:Teks>

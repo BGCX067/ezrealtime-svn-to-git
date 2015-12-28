@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/br.ufam.pnmp.ezrealtime.model/src"
+    creationSubmenus="true" modelPluginID="br.ufam.pnmp.ezrealtime.model" templateDirectory="/br.ufam.pnmp.ezrealtime.model/templates"
+    dynamicTemplates="true" forceOverwrite="true" modelName="ezrt" editPluginClass="br.ufam.pnmp.ezrealtime.provider.EZRealtimeEditPlugin"
+    editorPluginClass="br.ufam.pnmp.ezrealtime.presentation.EZRealtimeEditorPlugin"
+    generateSchema="true" codeFormatting="true" testSuiteClass="br.ufam.pnmp.ezrealtime.tests.EZRealtimeAllTests"
+    importerID="org.eclipse.emf.importer.ecore" containmentProxies="true" complianceLevel="5.0"
+    copyrightFields="false">
+  <foreignModel>../../br.ufam.pnmp.ezrealtime.metamodels/EZRealtime.ecore</foreignModel>
+  <genPackages prefix="EZRealtime" basePackage="br.ufam.pnmp" resource="XML" disposableProviderFactory="true"
+      ecorePackage="EZRealtime.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="EZRealtime.ecore#//SchedulingType">
+      <genEnumLiterals ecoreEnumLiteral="EZRealtime.ecore#//SchedulingType/P"/>
+      <genEnumLiterals ecoreEnumLiteral="EZRealtime.ecore#//SchedulingType/NP"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="EZRealtime.ecore#//SchedulingTypeObject"/>
+    <genClasses ecoreClass="EZRealtime.ecore#//EZRealtimeSpec">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//EZRealtimeSpec/task"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//EZRealtimeSpec/processor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//EZRealtimeSpec/message"/>
+    </genClasses>
+    <genClasses ecoreClass="EZRealtime.ecore#//Task">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//Task/precedesTasks"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//Task/precedesMessages"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//Task/excludesTasks"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//Task/processor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/period"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/phase"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/power"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/release"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/schedulingMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/computing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/deadline"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Task/identifier"/>
+    </genClasses>
+    <genClasses ecoreClass="EZRealtime.ecore#//Message">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EZRealtime.ecore#//Message/precedes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Message/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Message/bus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Message/grantBus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Message/communication"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Message/identifier"/>
+    </genClasses>
+    <genClasses ecoreClass="EZRealtime.ecore#//Processor">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Processor/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//Processor/name"/>
+    </genClasses>
+    <genClasses ecoreClass="EZRealtime.ecore#//SourceCode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EZRealtime.ecore#//SourceCode/content"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

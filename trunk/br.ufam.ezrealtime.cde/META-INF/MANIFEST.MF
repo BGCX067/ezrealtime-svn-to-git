@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ezRealtime Crowdsourcing Dev. Environment
+Bundle-SymbolicName: br.ufam.ezrealtime.cde;singleton:=true
+Bundle-Version: 0.8.0.BETA
+Bundle-Activator: br.ufam.edu.ezrealtime.cde.Activator
+Bundle-Vendor: Fabiano Cruz
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.5.0",
+ org.eclipse.core.resources;bundle-version="3.5.2",
+ org.eclipse.ui;bundle-version="3.5.2",
+ org.eclipse.ui.ide;bundle-version="3.5.2",
+ org.eclipse.ui.navigator;bundle-version="3.4.2",
+ org.eclipse.ui.navigator.resources;bundle-version="3.4.1",
+ org.eclipse.core.expressions;bundle-version="3.4.101",
+ org.eclipse.ui.forms;bundle-version="3.4.1",
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.jface.text;bundle-version="3.5.2",
+ org.eclipse.ui.workbench.texteditor;bundle-version="3.5.1",
+ br.ufam.ezrealtime.ebundle.core;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy

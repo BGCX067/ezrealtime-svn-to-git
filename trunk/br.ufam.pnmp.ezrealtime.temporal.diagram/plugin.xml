@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin
+   id="br.ufam.pnmp.ezrealtime.temporal.diagram"
+   name="ezRealtime Temporal Diagram Plug-in"
+   version="1.0.2"
+   provider-name="Fabiano Cruz"
+   class="br.ufam.pnmp.ezrealtime.temporal.diagram.RealTimeDiagramPlugin">
+
+   <runtime>
+      <library name="br.ufam.pnmp.ezrealtime.temporal.diagram.jar"/>
+   </runtime>
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui"/>
+   </requires>
+   
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            name="ezRealtime Temporal Diagram"
+            extensions="rtd"
+            icon="icons/sample.gif"
+            contributorClass="br.ufam.pnmp.ezrealtime.temporal.diagram.RealTimeDiagramContributor"
+            class="br.ufam.pnmp.ezrealtime.temporal.diagram.RealTimeDiagramEditor"
+            id="br.ufam.pnmp.ezrealtime.temporal.diagram.RealTimeDiagramEditor">
+      </editor>
+   </extension>
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.rtd"
+            id="br.ufam.pnmp.ezrealtime.temporal.diagram.contribution1">
+         <action
+               label="Generate Log File"
+               class="br.ufam.pnmp.ezrealtime.temporal.diagram.actions.GenerateLogAction"
+			   menubarPath="translator"			   
+               id="br.ufam.pnmp.ezrealtime.temporal.diagram.actions.GenerateLogAction">
+         </action>
+      </objectContribution>
+	</extension>
+</plugin>

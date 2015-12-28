@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rt:ez-spec xmlns:rt="http://pnmp.sf.net/EZRealtime">
+  <Task precedesTasks="#ez1151891690363" identifier="ez1151891686848">
+    <processor>p124365</processor>
+    <name>green</name>
+    <period>9</period>
+    <power>10</power>
+    <schedulingMode>NP</schedulingMode>
+    <computing>1</computing>
+    <deadline>9</deadline>
+  </Task>
+  <Task precedesTasks="#ez1151891693528" excludesTasks="#ez1151891686848" identifier="ez1151891690363">
+    <processor>p124365</processor>
+    <name>yellow</name>
+    <period>9</period>
+    <phase>5</phase>
+    <power>2</power>
+    <schedulingMode>NP</schedulingMode>
+    <computing>1</computing>
+    <deadline>9</deadline>
+  </Task>
+  <Task excludesTasks="#ez1151891690363" identifier="ez1151891693528">
+    <processor>p124365</processor>
+    <name>red</name>
+    <period>9</period>
+    <phase>6</phase>
+    <power>5</power>
+    <schedulingMode>NP</schedulingMode>
+    <computing>1</computing>
+    <deadline>9</deadline>
+  </Task>
+  <processor identifier="p124365">
+    <name>P1</name>
+  </processor>
+</rt:ez-spec>

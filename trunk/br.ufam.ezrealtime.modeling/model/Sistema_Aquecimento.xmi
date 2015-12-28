@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ezrt:Program xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:classifiers="http://ezrealtime.org/meta/1.0.0/classifiers"
+	xmlns:ezrt="http://ezrealtime.org/meta/1.0.0/ezrealtime"
+	xsi:schemaLocation="http://ezrealtime.org/meta/1.0.0/classifiers ../dsl/metamodel/ezrealtime.classifiers.ecore http://ezrealtime.org/meta/1.0.0/ezrealtime ../dsl/metamodel/ezrealtime.metamodel.ecore">
+	<elements xsi:type="classifiers:File" name="Aquec_Central">
+		<ownedTask name="C_HEAT_Init" />
+		<ownedTask name="C_HEAT_Get_Temp_Requerida" />
+		<ownedTask name="C_HEAT_Ge_Temp_Atual" />
+		<ownedTask name="C_HEAT_Controlar_Aquecedor" />
+	</elements>
+	<elements xsi:type="classifiers:EntryPoint" name="Main">
+		<superLoop>
+			<taskReference task="//@elements.0/@ownedTask.1" />
+			<taskReference task="//@elements.0/@ownedTask.2" />
+			<taskReference task="//@elements.0/@ownedTask.3" />
+		</superLoop>
+		<taskReference task="//@elements.0/@ownedTask.0" />
+	</elements>
+</ezrt:Program>

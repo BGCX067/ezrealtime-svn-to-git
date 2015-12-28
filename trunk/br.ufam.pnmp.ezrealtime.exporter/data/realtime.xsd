@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:rt="http://www.ufam.edu.br/pnmp/Realtime" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="rt" ecore:package="br.ufam.pnmp.realtime.model" targetNamespace="http://www.ufam.edu.br/pnmp/Realtime">
+  
+	<xsd:element name="spec" type="rt:RealtimeSpec"/>
+  
+	<xsd:element name="comment" type="xsd:string"/>
+  
+	<xsd:complexType name="RealtimeSpec">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="task" type="rt:Task"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="processor" type="rt:Processor"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="message" type="rt:Message"/>
+		</xsd:sequence>
+	</xsd:complexType>
+  
+	<xsd:complexType name="Task">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="name" type="xsd:string"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="period" type="xsd:int"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="phase" type="xsd:int"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="power" type="xsd:int"/>
+			<xsd:element ecore:reference="rt:Processor" maxOccurs="1" minOccurs="0" name="processor"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="release" type="xsd:int"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="schedulingMode" type="rt:SchedulingType"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="computing" type="xsd:int"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="deadline" type="xsd:int"/>
+			<xsd:element maxOccurs="1" minOccurs="0" name="precedes" type="rt:Precedes"/>
+			<xsd:element maxOccurs="1" minOccurs="0" name="excludes" type="rt:ExcludesTasks"/>
+		</xsd:sequence>
+		<xsd:attribute name="identifier" type="xsd:ID" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Processor">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="1" name="name" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="identifier" type="xsd:ID" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="Message">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="bus" type="xsd:string"/>
+			<!-- Begin Time -->
+			<xsd:element maxOccurs="1" minOccurs="1" name="grantBus" type="xsd:int"/>
+			<xsd:element maxOccurs="1" minOccurs="1" name="comunication" type="xsd:int"/>
+			<!-- End Time -->
+			<xsd:element maxOccurs="1" minOccurs="0" name="precedes" type="rt:PrecedesTasks"/>
+		</xsd:sequence>
+		<xsd:attribute name="identifier" type="xsd:ID" use="required"/>
+	</xsd:complexType>
+  
+	<xsd:complexType name="ExcludesTasks">
+		<xsd:sequence>
+			<xsd:element ecore:reference="rt:Task" maxOccurs="unbounded" minOccurs="0" name="task"/>
+		</xsd:sequence>
+	</xsd:complexType>
+  
+	<xsd:complexType name="Precedes">
+		<xsd:choice maxOccurs="unbounded">
+			<xsd:element ecore:reference="rt:Task" maxOccurs="unbounded" minOccurs="0" name="task"/>
+			<xsd:element ecore:reference="rt:Message" maxOccurs="unbounded" minOccurs="0" name="message"/>
+		</xsd:choice>
+	</xsd:complexType>
+
+	<xsd:complexType name="PrecedesTasks">
+		<xsd:sequence>
+			<xsd:element ecore:reference="rt:Task" maxOccurs="unbounded" minOccurs="0" name="task"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="SourceCode">
+		<xsd:sequence>
+			<xsd:element name="content" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="SchedulingType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration ecore:name="P" value="P"/>
+			<xsd:enumeration ecore:name="NP" value="NP"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>
+<!--
+BEGIN RCS-Info
+
+ $Log: realtime.xsd,v $
+ Revision 1.1  2007/07/02 18:05:51  fabianocruz
+ initial version
+
+ Revision 0.12  2007/03/21 16:12:39  fabianocruz
+ Reference elements (ecore:reference) added
+ 	
+ Revision 0.13  2007/03/22 12:08:43  fabianocruz
+ typo corrected
+
+ Revision 0.14  2007/03/24 15:08:43  fabianocruz
+ adding processor as a complex type and chaning the 
+ scheduling type value att
+
+
+END RCS-Info
+-->

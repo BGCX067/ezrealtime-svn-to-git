@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ezrt:Program xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:classifiers="http://ezrealtime.org/meta/1.0.0/classifiers" xmlns:ezrt="http://ezrealtime.org/meta/1.0.0/ezrealtime" xsi:schemaLocation="http://ezrealtime.org/meta/1.0.0/classifiers ../dsl/metamodel/ezrealtime.classifiers.ecore http://ezrealtime.org/meta/1.0.0/ezrealtime ../dsl/metamodel/ezrealtime.metamodel.ecore">
+  <elements xsi:type="classifiers:File" name="F41x_Blinky" relativePath="" toolChain="" release="">
+    <preprocessor defaultValueLiteral="24500000 / 64" name="SYSCLK" type="#define"/>
+    <ownedTask name="OSCILLATOR_Init">
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0x81">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.4"/>
+      </feature>
+    </ownedTask>
+    <ownedTask name="PORT_Init">
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0x00">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.1"/>
+      </feature>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0x40">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.2"/>
+      </feature>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0x02">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.3"/>
+      </feature>
+    </ownedTask>
+    <ownedTask name="Timer2_Init">
+      <parameter name="counts">
+        <dataType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.0"/>
+      </parameter>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0x00">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.5"/>
+      </feature>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0x30">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.6"/>
+      </feature>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="-counts" name="//@elements.0/@feature.0"/>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="1">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.7"/>
+      </feature>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="1">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.7"/>
+      </feature>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0xffff" name="//@elements.0/@feature.1"/>
+    </ownedTask>
+    <ownedTask xsi:type="classifiers:InterrupServiceRoutine" name="Timer2_ISR">
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="0">
+        <name href="c8051F1410.xmi#//@elements.0/@feature.10"/>
+      </feature>
+      <feature xsi:type="classifiers:Reference" defaultValueLiteral="~LED" name="//@elements.0/@feature.2"/>
+      <priority href="c8051F1410.xmi#//@elements.0/@feature.11"/>
+    </ownedTask>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xca" name="TMR2RL">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.13"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="0xcc" name="TMR2">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.13"/>
+    </feature>
+    <feature xsi:type="classifiers:Variable" defaultValueLiteral="P2^1" name="LED">
+      <variableType href="ANSICPrimitiveType.library.xmi#//@elements.0/@ownedType.15"/>
+    </feature>
+  </elements>
+  <elements xsi:type="classifiers:EntryPoint" name="Main">
+    <superLoop/>
+    <feature xsi:type="classifiers:Reference" defaultValueLiteral="~0x40">
+      <name href="c8051F1410.xmi#//@elements.0/@feature.0"/>
+    </feature>
+    <feature xsi:type="classifiers:Reference" defaultValueLiteral="1">
+      <name href="c8051F1410.xmi#//@elements.0/@feature.9"/>
+    </feature>
+    <taskReference task="//@elements.0/@ownedTask.0"/>
+    <taskReference task="//@elements.0/@ownedTask.1"/>
+    <taskReference task="//@elements.0/@ownedTask.2">
+      <argument value="SYSCLK / 10" grantBus="1" communication="1"/>
+    </taskReference>
+  </elements>
+</ezrt:Program>

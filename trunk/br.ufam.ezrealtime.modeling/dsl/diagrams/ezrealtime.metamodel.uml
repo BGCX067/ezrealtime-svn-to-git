@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_vyi-cIpBEd-HsLiLByOIjw" name="ezrealtime">
+    <packagedElement xmi:type="uml:Class" xmi:id="_vyi-cYpBEd-HsLiLByOIjw" name="Program">
+      <ownedAttribute xmi:id="_vyi-copBEd-HsLiLByOIjw" name="container" isOrdered="true" aggregation="composite" association="_vyi-kIpBEd-HsLiLByOIjw">
+        <type xmi:type="uml:Class" href="ezrealtime.core.uml#_vwNccopBEd-HsLiLByOIjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyi-c4pBEd-HsLiLByOIjw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-dIpBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-dYpBEd-HsLiLByOIjw" name="elementRef" isOrdered="true" isReadOnly="true" association="_vyi-kopBEd-HsLiLByOIjw">
+        <type xmi:type="uml:Class" href="ezrealtime.core.uml#_vwNcIopBEd-HsLiLByOIjw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-dopBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-d4pBEd-HsLiLByOIjw" name="annotations" isOrdered="true" aggregation="composite" association="_vyi-lIpBEd-HsLiLByOIjw">
+        <type xmi:type="uml:Class" href="ezrealtime.core.uml#_vwNcKopBEd-HsLiLByOIjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyi-eIpBEd-HsLiLByOIjw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-eYpBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-eopBEd-HsLiLByOIjw" name="comments" isOrdered="true" aggregation="composite" association="_vyi-lopBEd-HsLiLByOIjw">
+        <type xmi:type="uml:Class" href="ezrealtime.core.uml#_vwNcPYpBEd-HsLiLByOIjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyi-e4pBEd-HsLiLByOIjw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-fIpBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-fYpBEd-HsLiLByOIjw" name="title" visibility="public" isOrdered="true" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-fopBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-f4pBEd-HsLiLByOIjw" name="author" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-gIpBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-gYpBEd-HsLiLByOIjw" name="lastModified" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-gopBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-g4pBEd-HsLiLByOIjw" name="elements" isOrdered="true" aggregation="composite" association="_vyi-mIpBEd-HsLiLByOIjw">
+        <type xmi:type="uml:Class" href="ezrealtime.core.uml#_vwNcgopBEd-HsLiLByOIjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyi-hIpBEd-HsLiLByOIjw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-hYpBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-hopBEd-HsLiLByOIjw" name="copyright" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-h4pBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-iIpBEd-HsLiLByOIjw" name="website" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#AnyURI"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-iYpBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-iopBEd-HsLiLByOIjw" name="ownedRules" isOrdered="true" aggregation="composite" association="_vyi-mopBEd-HsLiLByOIjw">
+        <type xmi:type="uml:Class" href="ezrealtime.core.uml#_vwNcbopBEd-HsLiLByOIjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyi-i4pBEd-HsLiLByOIjw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-jIpBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vyi-jYpBEd-HsLiLByOIjw" name="resource" isOrdered="true" aggregation="composite" association="_vyi-nIpBEd-HsLiLByOIjw">
+        <type xmi:type="uml:Class" href="ezrealtime.core.uml#_vwNceopBEd-HsLiLByOIjw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyi-jopBEd-HsLiLByOIjw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyi-j4pBEd-HsLiLByOIjw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vyi-kIpBEd-HsLiLByOIjw" memberEnd="_vyi-copBEd-HsLiLByOIjw _vyi-kYpBEd-HsLiLByOIjw">
+      <ownedEnd xmi:id="_vyi-kYpBEd-HsLiLByOIjw" type="_vyi-cYpBEd-HsLiLByOIjw" association="_vyi-kIpBEd-HsLiLByOIjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vyi-kopBEd-HsLiLByOIjw" memberEnd="_vyi-dYpBEd-HsLiLByOIjw _vyi-k4pBEd-HsLiLByOIjw">
+      <ownedEnd xmi:id="_vyi-k4pBEd-HsLiLByOIjw" type="_vyi-cYpBEd-HsLiLByOIjw" association="_vyi-kopBEd-HsLiLByOIjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vyi-lIpBEd-HsLiLByOIjw" memberEnd="_vyi-d4pBEd-HsLiLByOIjw _vyi-lYpBEd-HsLiLByOIjw">
+      <ownedEnd xmi:id="_vyi-lYpBEd-HsLiLByOIjw" type="_vyi-cYpBEd-HsLiLByOIjw" association="_vyi-lIpBEd-HsLiLByOIjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vyi-lopBEd-HsLiLByOIjw" memberEnd="_vyi-eopBEd-HsLiLByOIjw _vyi-l4pBEd-HsLiLByOIjw">
+      <ownedEnd xmi:id="_vyi-l4pBEd-HsLiLByOIjw" type="_vyi-cYpBEd-HsLiLByOIjw" association="_vyi-lopBEd-HsLiLByOIjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vyi-mIpBEd-HsLiLByOIjw" memberEnd="_vyi-g4pBEd-HsLiLByOIjw _vyi-mYpBEd-HsLiLByOIjw">
+      <ownedEnd xmi:id="_vyi-mYpBEd-HsLiLByOIjw" type="_vyi-cYpBEd-HsLiLByOIjw" association="_vyi-mIpBEd-HsLiLByOIjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vyi-mopBEd-HsLiLByOIjw" memberEnd="_vyi-iopBEd-HsLiLByOIjw _vyi-m4pBEd-HsLiLByOIjw">
+      <ownedEnd xmi:id="_vyi-m4pBEd-HsLiLByOIjw" type="_vyi-cYpBEd-HsLiLByOIjw" association="_vyi-mopBEd-HsLiLByOIjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vyi-nIpBEd-HsLiLByOIjw" memberEnd="_vyi-jYpBEd-HsLiLByOIjw _vyi-nYpBEd-HsLiLByOIjw">
+      <ownedEnd xmi:id="_vyi-nYpBEd-HsLiLByOIjw" type="_vyi-cYpBEd-HsLiLByOIjw" association="_vyi-nIpBEd-HsLiLByOIjw"/>
+    </packagedElement>
+    <profileApplication xmi:id="_vyi-nopBEd-HsLiLByOIjw">
+      <eAnnotations xmi:id="_vyi-n4pBEd-HsLiLByOIjw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Ecore:EPackage xmi:id="_vyi-oIpBEd-HsLiLByOIjw" base_Package="_vyi-cIpBEd-HsLiLByOIjw" nsPrefix="ezrt" nsURI="http://ezrealtime.org/meta/1.0.0/ezrealtime"/>
+  <Ecore:EClass xmi:id="_vyi-oYpBEd-HsLiLByOIjw" base_Class="_vyi-cYpBEd-HsLiLByOIjw"/>
+  <Ecore:EReference xmi:id="_vyi-oopBEd-HsLiLByOIjw" base_Property="_vyi-copBEd-HsLiLByOIjw"/>
+  <Ecore:EReference xmi:id="_vyi-o4pBEd-HsLiLByOIjw" base_Property="_vyi-dYpBEd-HsLiLByOIjw"/>
+  <Ecore:EReference xmi:id="_vyi-pIpBEd-HsLiLByOIjw" base_Property="_vyi-d4pBEd-HsLiLByOIjw"/>
+  <Ecore:EReference xmi:id="_vyi-pYpBEd-HsLiLByOIjw" base_Property="_vyi-eopBEd-HsLiLByOIjw"/>
+  <Ecore:EAttribute xmi:id="_vyi-popBEd-HsLiLByOIjw" base_Property="_vyi-fYpBEd-HsLiLByOIjw"/>
+  <Ecore:EAttribute xmi:id="_vyi-p4pBEd-HsLiLByOIjw" base_Property="_vyi-f4pBEd-HsLiLByOIjw"/>
+  <Ecore:EAttribute xmi:id="_vyi-qIpBEd-HsLiLByOIjw" base_Property="_vyi-gYpBEd-HsLiLByOIjw"/>
+  <Ecore:EReference xmi:id="_vyi-qYpBEd-HsLiLByOIjw" base_Property="_vyi-g4pBEd-HsLiLByOIjw"/>
+  <Ecore:EAttribute xmi:id="_vyi-qopBEd-HsLiLByOIjw" base_Property="_vyi-hopBEd-HsLiLByOIjw"/>
+  <Ecore:EAttribute xmi:id="_vyi-q4pBEd-HsLiLByOIjw" base_Property="_vyi-iIpBEd-HsLiLByOIjw"/>
+  <Ecore:EReference xmi:id="_vyi-rIpBEd-HsLiLByOIjw" base_Property="_vyi-iopBEd-HsLiLByOIjw"/>
+  <Ecore:EReference xmi:id="_vyi-rYpBEd-HsLiLByOIjw" base_Property="_vyi-jYpBEd-HsLiLByOIjw"/>
+</xmi:XMI>

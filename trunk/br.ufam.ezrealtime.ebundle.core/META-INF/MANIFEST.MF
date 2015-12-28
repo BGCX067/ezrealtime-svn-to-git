@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core
+Bundle-SymbolicName: br.ufam.ezrealtime.ebundle.core;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: br.ufam.ezrealtime.ebundle.core.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.5.2"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: br.ufam.ezrealtime.ebundle.core

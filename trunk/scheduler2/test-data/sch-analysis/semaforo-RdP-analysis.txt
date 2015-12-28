@@ -1,0 +1,167 @@
+---===== SEMAFORO	- places
+
+													ezRealtime				ezPetri
+.:Periodic Task Arrival Block
+-------------------------------------------------------------------------------------------------------------
+starting of task									pst_0					PStartgreen
+													pst_01					PStartyellow
+													pst_012					PStartred
+waiting for the arrival of another task instance	pwa_green				PA1green
+													pwa_yellow				PA1yellow
+													pwa_red					PA1red	
+waiting for releasing								pwr_green				PA2green
+													pwr_yellow				PA2yellow
+													pwr_red					PA2red
+=> pwd: waiting for deadline missing					
+
+.:Non-Preemptive Task Structure Block
+-------------------------------------------------------------------------------------------------------------
+=> pwr: waiting for release time						
+waiting for processor granting						pwg_green				PR1_green
+													pwg_yellow				PR1_yellow
+													pwg_red					PR1_red
+waiting for task computation						pwc_green				PR2_green
+													pwc_yellow				PR2_yellow
+													pwc_red					PR2_red
+waiting for task instance end						pwf_green
+													pwf_yellow
+													pwf_red					
+=> pwdi : waiting for deadline missing;
+=> pf: end of a task instance								
+=> pproc: processor									
+
+.:Deadline Checking Block
+-------------------------------------------------------------------------------------------------------------
+waiting for deadline missing						pwd_green				PD1green	
+													pwd_yellow				PD1yellow
+													pwd_red					PD1red
+waiting for computation removing					pwpc_green				PD2green
+													pwpc_yellow				PD2yellow
+													pwpc_red				PD2red
+deadline missed										pdm_green				PD3green
+													pdm_yellow				PD3yellow
+													pdm_red					PD3red
+=> pwci : waiting for task computation.
+
+.:Fork Block
+-------------------------------------------------------------------------------------------------------------
+waiting for system starting							pstart					Pstart
+=> ptsi : starting of the ith task, 1 = i = n
+
+.:Join Block
+-------------------------------------------------------------------------------------------------------------
+end of the ith task, 1 = i = n						pf_0					PEndgreen
+													pf_01					PEndyellow
+													pf_012					PEndred
+end of the system									PEnd					PEnd
+processor											pproc_P1				P1
+
+.:Precedence Relation
+-------------------------------------------------------------------------------------------------------------
+precedence											prec_green_yellow		P_green_PRECEDES_yellow
+													prec_yellow_red			P_yellow_PRECEDES_red
+													
+													pwp_green_yellow		PSeq_yellow	
+													pwp_yellow_red			PSeq_red
+
+
+---===== SEMAFORO - transitions
+
+5 - tMDgreen
+12 - tMDyellow
+20 - tMDred
+
+##TD##
+ezPetri 	= 3 $ tDgreen % tDyellow % tDred										
+ezRealtime 	= 3 $ td_green % td_yellow % td_red
+
+##TA##
+ezPetri 	= 6 $ tPhgreen % tAgreen % tPhyellow % tAyellow % tPhred % tAred
+ezRealtime 	= 6 $ tph_green % ta_green % tph_yellow % ta_yellow % tph_red % ta_red
+
+##TR##
+ezPetri 	= 3 $ tR_green % tR_yellow % tR_red
+ezRealtime 	= 3 $ tr_green % tr_yellow % tr_red
+
+##TG##
+ezPetri 	= 3 $ tP_green % tP_yellow % tP_red
+ezRealtime 	= 3 $ tg_green % tg_yellow % tg_red
+
+##TC##
+ezPetri 	= 3 $ tC_green % tC_yellow % tC_red
+ezRealtime 	= 3 $ tc_green % tc_yellow % tc_red
+
+##TF##
+ezPetri 	= 0 $ 
+ezRealtime 	= 3 $ tf_green % tf_yellow % tf_red
+
+##TO##
+ezPetri 	= 2 $ tstart % tEnd
+ezRealtime 	= 5 $ tstart % tend % tpc_green % tpc_yellow % tpc_red
+
+##TP##
+ezPetri 	= 2 $ tSequenceyellow % tSequencered
+ezRealtime 	= 2 $ tprec_green_yellow % tprec_yellow_red
+
+
+---===== ALL Transitions 
+
+					EFT  LFT
+tstart				0	0
+tEnd				0	0
+tPhgreen			0	0
+tAgreen				9	9	=
+tDgreen				9	9	=
+tMDgreen			0	0
+tR_green			0	8	=
+tP_green			0	0
+tC_green			1	1	=
+tPhyellow			5	5	=
+tAyellow			9	9	=
+tDyellow			9	9	=
+tMDyellow			0	0
+tR_yellow			0	8	=
+tP_yellow			0	0
+tC_yellow			1	1	=
+tSequenceyellow		0	0
+tPhred				6	6	=
+tAred				9	9	=
+tDred				9	9	=
+tMDred				0	0
+tR_red				0	8	=
+tP_red				0	0
+tC_red				1	1	=
+tSequencered		0	0
+
+tstart				0	0
+tend				0	0
+tph_green			0	0
+ta_green			9	9
+tr_green			0	8
+tg_green			0	0
+tc_green			1	1
+tf_green			0	0
+td_green			9	9
+tpc_green			0	0
+tph_yellow			5	5
+ta_yellow			9	9
+tr_yellow			0	8
+tg_yellow			0	0
+tc_yellow			1	1
+tf_yellow			0	0
+td_yellow			9	9
+tpc_yellow			0	0
+tph_red				6	6
+ta_red				9	9
+tr_red				0	8
+tg_red				0	0	
+tc_red				1	1
+tf_red				0	0
+td_red				9	9
+tpc_red				0	0
+tprec_green_yellow 	0  	0			
+tprec_yellow_red   	0  	0	
+
+
+
+

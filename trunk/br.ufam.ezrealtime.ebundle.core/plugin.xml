@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="cnature"
+         name="C Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="br.ufam.ezrealtime.ebundle.core.CProjectNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.contentTypes">
+      <content-type
+            id="ezRTComponent"
+            name="ezRT Component File"
+            priority="high">
+      </content-type>
+      <content-type
+            base-type="org.eclipse.core.runtime.text"
+            id="cSource"
+            name="C Source File"
+            priority="high">
+      </content-type>
+      <content-type
+            id="cHeader"
+            name="C Header File"
+            priority="high">
+      </content-type>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.contentTypes">
+      <file-association
+            content-type="cSource"
+            file-extensions="c">
+      </file-association>
+      <file-association
+            content-type="cHeader"
+            file-extensions="h">
+      </file-association>
+      <file-association
+            content-type="ezRTComponent"
+            file-extensions="xml"
+            file-names="ebundle">
+      </file-association>
+   </extension>
+
+</plugin>

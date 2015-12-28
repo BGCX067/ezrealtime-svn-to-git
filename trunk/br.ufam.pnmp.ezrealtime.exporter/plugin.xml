@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.emf.exporter.modelExporterDescriptors">
+    <modelExporterDescriptor 
+    	id="br.ufam.pnmp.ezrealtime.exporter" name="%_UI_SchExporter_label" 
+      icon="resources/icons/TextFile.gif" 
+      description="%_UI_SchExporter_description" 
+      wizard="br.ufam.pnmp.ezrealtime.exporter.sch.ui.SchExporterWizard" />
+  </extension>
+
+  <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.ezrealtime"
+            id="br.ufam.pnmp.ezrealtime.exporter.ui.contribution1">
+         <action
+               label="Export into PNML"
+               class="br.ufam.pnmp.ezrealtime.exporter.ui.action.EZRealtime2PnmlAction"
+               menubarPath="pnmltranslator"
+               enablesFor="1"
+               id="br.ufam.pnmp.ezrealtime.exporter.ui.action.EZRealtime2PnmlAction">
+         </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.pnml"
+            id="br.ufam.pnmp.ezrealtime.exporter.ui.contribution2">
+         <action
+               label="Export into DOT"
+               class="br.ufam.pnmp.ezrealtime.exporter.ui.action.Pnml2DotAction"
+               menubarPath="dottranslator"
+               enablesFor="1"
+               id="br.ufam.pnmp.ezrealtime.exporter.ui.action.Pnml2DotAction">
+         </action>
+      </objectContribution>
+   </extension>
+  
+</plugin>
